@@ -21,9 +21,9 @@ auth_file: "/var/opt/gitlab/.ssh/authorized_keys"
 
 # Redis settings used for pushing commit notices to gitlab
 redis:
-  host: 127.0.0.1
-  port: 
-  socket: /var/opt/gitlab/redis/redis.socket
+  bin: /opt/gitlab/embedded/bin/redis-cli
+  host: redis
+  port: 6379
   database: 
   namespace: resque:gitlab
 

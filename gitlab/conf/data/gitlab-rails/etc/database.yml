@@ -4,18 +4,18 @@
 
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   collation: 
   database: gitlabhq_production
   pool: 10
-  username: "gitlab"
-  password: 
-  host: "/var/opt/gitlab/postgresql"
+  username: 'gitlab'
+  password: 'gitlab'
+  host: 'postgresql'
   port: 5432
   socket: 
   sslmode: 
   sslrootcert: 
   sslca: 
   load_balancing: {"hosts":[]}
-  prepared_statements: false
+  prepared_statements: true
   statements_limit: 1000

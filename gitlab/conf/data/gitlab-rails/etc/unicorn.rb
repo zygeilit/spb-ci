@@ -16,7 +16,7 @@ timeout 60
 preload_app true
 
 # How many worker processes
-worker_processes 2
+worker_processes 3
 
 # What to do before we fork a worker
 before_fork do |server, worker|
@@ -36,8 +36,6 @@ end
 # What to do after we fork a worker
 after_fork do |server, worker|
         ActiveRecord::Base.establish_connection if defined?(ActiveRecord::Base)
-      defined?(::Prometheus::Client.reinitialize_on_pid_change) &&
-        Prometheus::Client.reinitialize_on_pid_change
 
 end
 

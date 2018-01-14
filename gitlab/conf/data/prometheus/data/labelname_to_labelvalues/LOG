@@ -62,3 +62,25 @@
 10:24:03.411201 table@remove removed @2
 10:36:44.913029 db@close closing
 10:36:44.913796 db@close done T·765.65µs
+=============== Jan 14, 2018 (UTC) ===============
+10:40:15.651829 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:40:15.656949 version@stat F·[0 1] S·20KiB[0B 20KiB] Sc·[0.00 0.00]
+10:40:15.657286 db@open opening
+10:40:15.661066 journal@recovery F·1
+10:40:15.662016 journal@recovery recovering @12
+10:40:15.670178 memdb@flush created L0@15 N·11 S·29KiB "\x06cmd,v180":"\x10in..nce,v173"
+10:40:15.673402 version@stat F·[1 1] S·49KiB[29KiB 20KiB] Sc·[0.25 0.00]
+10:40:15.680584 db@janitor F·4 G·0
+10:40:15.680786 db@open done T·23.309851ms
+10:40:33.354331 db@close closing
+10:40:33.355244 db@close done T·910.494µs
+=============== Jan 14, 2018 (UTC) ===============
+10:40:33.513893 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:40:33.516970 version@stat F·[1 1] S·49KiB[29KiB 20KiB] Sc·[0.25 0.00]
+10:40:33.517341 db@open opening
+10:40:33.518420 journal@recovery F·1
+10:40:33.518765 journal@recovery recovering @16
+10:40:33.524157 memdb@flush created L0@18 N·19 S·58KiB "\x06job,v201":"\x12go..ion,v189"
+10:40:33.525068 version@stat F·[2 1] S·108KiB[87KiB 20KiB] Sc·[0.50 0.00]
+10:40:33.529340 db@janitor F·5 G·0
+10:40:33.529622 db@open done T·12.064544ms

@@ -1,3 +1,3 @@
 [redis]
-URL = "unix:/var/opt/gitlab/redis/redis.socket"
+URL = "tcp://redis:6379/"
 Password = ""
