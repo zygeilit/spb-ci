@@ -1,6 +1,4 @@
-FROM centos
-
-MAINTAINER Zhange Yue <zygeilit@icloud.com>
+FROM centos:6
 
 RUN yum install -y java-1.8.0-openjdk.x86_64
 RUN cp /etc/profile /etc/profile_backup && \
@@ -26,5 +24,10 @@ RUN yum -y install git && \
 RUN yum install -y epel-release && \
     yum install -y nodejs && \
     echo Nodejs Version: `node -v`
+
+RUN /var/external-mounts/generate-ssh-key.sh && \
+    /var/external-mounts/add-ssh-key-to-gitlab.sh && \
+    /var/external-mounts/add-credential-with-ssh-key.sh && \
+    /var/external-mounts/install-jenkins-plugins.sh
     
 ENTRYPOINT service jenkins start && /bin/bash
