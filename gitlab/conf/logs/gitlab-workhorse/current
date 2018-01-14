@@ -1,0 +1,19 @@
+2018-01-14_10:10:09.41222 2018/01/14 10:10:09 Starting gitlab-workhorse v3.3.1-20180102.162804
+2018-01-14_10:10:09.41449 2018/01/14 10:10:09 Can not load config file "config.toml": open config.toml: no such file or directory
+2018-01-14_10:10:10.49291 2018/01/14 10:10:10 Starting gitlab-workhorse v3.3.1-20180102.162804
+2018-01-14_10:10:10.56605 2018/01/14 10:10:10 keywatcher: starting process loop
+2018-01-14_10:10:10.56657 2018/01/14 10:10:10 redis: dialing "unix", "/var/opt/gitlab/redis/redis.socket"
+2018-01-14_10:10:48.54826 localhost @ - - [2018-01-14 10:10:44.867258219 +0000 UTC] "GET /help HTTP/1.1" 200 29400 "" "curl/7.56.1" 3.680819
+2018-01-14_10:11:02.50660 2018/01/14 10:11:02 Starting gitlab-workhorse v3.3.1-20180102.162804
+2018-01-14_10:11:02.51003 2018/01/14 10:11:02 keywatcher: starting process loop
+2018-01-14_10:11:02.51038 2018/01/14 10:11:02 redis: dialing "unix", "/var/opt/gitlab/redis/redis.socket"
+2018-01-14_10:11:09.48622 127.0.0.1 @ - - [2018-01-14 10:11:09.235985409 +0000 UTC] "GET /users/password/edit?reset_password_token=Jz_6NrXeJ_RwCoASg47_ HTTP/1.1" 302 113 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.250133
+2018-01-14_10:11:12.97904 127.0.0.1 @ - - [2018-01-14 10:11:09.490794757 +0000 UTC] "GET /users/password/new?user_email= HTTP/1.1" 200 7217 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 3.488177
+2018-01-14_10:11:16.74462 127.0.0.1 @ - - [2018-01-14 10:11:16.713764831 +0000 UTC] "GET / HTTP/1.1" 302 96 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.030719
+2018-01-14_10:11:17.07961 127.0.0.1 @ - - [2018-01-14 10:11:16.747746213 +0000 UTC] "GET /users/sign_in HTTP/1.1" 302 144 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.331719
+2018-01-14_10:11:17.19675 127.0.0.1 @ - - [2018-01-14 10:11:17.082767892 +0000 UTC] "GET /users/password/edit?reset_password_token=yAdGDvssCPnRYCLU3LYd HTTP/1.1" 200 7817 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.113874
+2018-01-14_10:11:33.35616 127.0.0.1 @ - - [2018-01-14 10:11:32.531839786 +0000 UTC] "POST /users/password HTTP/1.1" 302 96 "http://127.0.0.1/users/password/edit?reset_password_token=yAdGDvssCPnRYCLU3LYd" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.824225
+2018-01-14_10:11:33.48011 127.0.0.1 @ - - [2018-01-14 10:11:33.359757272 +0000 UTC] "GET /users/sign_in HTTP/1.1" 200 10397 "http://127.0.0.1/users/password/edit?reset_password_token=yAdGDvssCPnRYCLU3LYd" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.120252
+2018-01-14_10:11:39.81761 127.0.0.1 @ - - [2018-01-14 10:11:39.794142204 +0000 UTC] "GET / HTTP/1.1" 302 96 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.023400
+2018-01-14_10:11:39.86025 127.0.0.1 @ - - [2018-01-14 10:11:39.8208237 +0000 UTC] "GET /users/sign_in HTTP/1.1" 200 10250 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" 0.039357
+2018-01-14_10:11:48.93596 localhost @ - - [2018-01-14 10:11:48.626557016 +0000 UTC] "GET /help HTTP/1.1" 200 29400 "" "curl/7.56.1" 0.309274
