@@ -1,0 +1,34 @@
+{
+  "name": "spb-ci",
+  "version": "0.0.1",
+  "description": "可移植、方便部署、可备份的自动化构建（CI）服务",
+  "main": "docker-compose.yml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zygeilit/spb-ci.git"
+  },
+  "keywords": [
+    "ci",
+    "jenkins",
+    "gitlab",
+    "postgresql",
+    "redis",
+    "groovy",
+    "env",
+    "docker",
+    "docker-compose",
+    "nodejs",
+    "mongodb",
+    "sh",
+    "dockerfile"
+  ],
+  "author": "zhangyue@icloud.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zygeilit/spb-ci/issues"
+  },
+  "homepage": "https://github.com/zygeilit/spb-ci#readme"
+}
