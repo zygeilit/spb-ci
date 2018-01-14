@@ -4,12 +4,14 @@
 
 HOST=http://127.0.0.1:8080
 URL=/pluginManager/installNecessaryPlugins
+ACCOUNT=root:12345678
+CRUMB=Jenkins-Crumb:1df73a8c77fdfdf0e4b67ff7e6cd095c
 
-# git plugin https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin
-curl -XPOST $HOST$URL -d '<install plugin="gitlab@current"/>'
+# 安装gitlab插件，和Gitlab对接需要在Jenkins安装此插件
+curl -XPOST -u "$ACCOUNT" -H "$CRUMB" $HOST$URL -d '<install plugin="gitlab-plugin@current"/>'
 
 # wait 20 sec
 sleep 20
 
 # jenkins safe restart
-curl -X POST $HOST/safeRestart
+curl -XPOST -u "$ACCOUNT" -H "$CRUMB" $HOST/safeRestart
