@@ -113,3 +113,12 @@ Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 0.0ms)
 Started GET "/-/metrics" for 127.0.0.1 at 2018-01-14 10:18:45 +0000
 Processing by MetricsController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-01-14 10:19:00 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-01-14 10:19:15 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+Started GET "/-/metrics" for 127.0.0.1 at 2018-01-14 10:19:30 +0000
+Processing by MetricsController#index as HTML
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)

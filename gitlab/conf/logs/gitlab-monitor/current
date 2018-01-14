@@ -66,3 +66,24 @@
 2018-01-14_10:18:52.44244 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
 2018-01-14_10:18:52.45568 127.0.0.1 - - [14/Jan/2018:10:18:52 UTC] "GET /sidekiq HTTP/1.1" 200 4562
 2018-01-14_10:18:52.45612 - -> /sidekiq
+2018-01-14_10:18:54.84806 127.0.0.1 - - [14/Jan/2018:10:18:54 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:18:54.84841 - -> /database
+2018-01-14_10:18:56.64335 127.0.0.1 - - [14/Jan/2018:10:18:56 UTC] "GET /process HTTP/1.1" 200 1160
+2018-01-14_10:18:56.64368 - -> /process
+2018-01-14_10:19:07.44996 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:19:07.47176 127.0.0.1 - - [14/Jan/2018:10:19:07 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:19:07.47213 - -> /sidekiq
+2018-01-14_10:19:09.63435 127.0.0.1 - - [14/Jan/2018:10:19:09 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:19:09.63536 - -> /database
+2018-01-14_10:19:11.64018 127.0.0.1 - - [14/Jan/2018:10:19:11 UTC] "GET /process HTTP/1.1" 200 1160
+2018-01-14_10:19:11.64075 - -> /process
+2018-01-14_10:19:22.44908 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:19:22.53478 127.0.0.1 - - [14/Jan/2018:10:19:22 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:19:22.53551 - -> /sidekiq
+2018-01-14_10:19:24.66478 127.0.0.1 - - [14/Jan/2018:10:19:24 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:19:24.66506 - -> /database
+2018-01-14_10:19:26.63999 127.0.0.1 - - [14/Jan/2018:10:19:26 UTC] "GET /process HTTP/1.1" 200 1160
+2018-01-14_10:19:26.64027 - -> /process
+2018-01-14_10:19:32.01763 == Sinatra has ended his set (crowd applauds)
+2018-01-14_10:19:32.01844 [2018-01-14 10:19:32] INFO  going to shutdown ...
+2018-01-14_10:19:32.01870 [2018-01-14 10:19:32] INFO  WEBrick::HTTPServer#start done.

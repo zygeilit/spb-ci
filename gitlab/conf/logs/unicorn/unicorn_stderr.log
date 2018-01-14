@@ -14,3 +14,6 @@ I, [2018-01-14T10:16:58.621216 #480]  INFO -- : listening on addr=/var/opt/gitla
 I, [2018-01-14T10:16:58.645884 #480]  INFO -- : master process ready
 I, [2018-01-14T10:16:58.813248 #851]  INFO -- : worker=0 ready
 I, [2018-01-14T10:16:58.816944 #853]  INFO -- : worker=1 ready
+I, [2018-01-14T10:19:38.106847 #480]  INFO -- : reaped #<Process::Status: pid 851 exit 0> worker=0
+I, [2018-01-14T10:19:38.110730 #480]  INFO -- : reaped #<Process::Status: pid 853 exit 0> worker=1
+I, [2018-01-14T10:19:38.113207 #480]  INFO -- : master complete
