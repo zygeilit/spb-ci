@@ -63,6 +63,9 @@ services:
       - $jenkins_port:8080
     volumes:
       - ./jenkins/mounts:$external_mounts_path
+    environment:
+      - jenkins_user=$jenkins_user
+      - jenkins_pass=$jenkins_pass
     logging:
       driver: json-file
       options:
