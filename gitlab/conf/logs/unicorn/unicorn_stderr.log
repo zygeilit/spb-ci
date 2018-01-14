@@ -7,3 +7,10 @@ I, [2018-01-14T10:10:32.407672 #1034]  INFO -- : worker=0 ready
 I, [2018-01-14T10:12:06.640851 #833]  INFO -- : reaped #<Process::Status: pid 1034 exit 0> worker=0
 I, [2018-01-14T10:12:06.650457 #833]  INFO -- : reaped #<Process::Status: pid 1036 exit 0> worker=1
 I, [2018-01-14T10:12:06.655388 #833]  INFO -- : master complete
+I, [2018-01-14T10:16:14.165539 #480]  INFO -- : Refreshing Gem list
+I, [2018-01-14T10:16:58.610818 #480]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-14T10:16:58.619904 #480]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-14T10:16:58.621216 #480]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-14T10:16:58.645884 #480]  INFO -- : master process ready
+I, [2018-01-14T10:16:58.813248 #851]  INFO -- : worker=0 ready
+I, [2018-01-14T10:16:58.816944 #853]  INFO -- : worker=1 ready

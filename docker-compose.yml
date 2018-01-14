@@ -29,6 +29,8 @@ services:
       - "8080"
     ports: 
       - "5002:8080"
+    volumes: 
+      - ./jenkins/mounts:/var/external-mounts
     logging:
       driver: json-file
       options:
@@ -45,7 +47,6 @@ services:
     ports: 
       - "3002:3000"
     volumes: 
-      - ./docserver/resources:/var/external-resources:rw
-    command: node /var/doc-web-server/bin/www
+      - ./docserver/mounts:/var/external-mounts
     stdin_open: true
     tty: true
