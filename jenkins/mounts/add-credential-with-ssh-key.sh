@@ -10,6 +10,7 @@ CRUMB=`curl -u "$ACCOUNT" $HOST'/crumbIssuer/api/xml?xpath=concat(//crumbRequest
 SSHKEY_PRIVATE_KEY=`cat /var/lib/jenkins/.ssh/id_rsa | grep [^-]$ | tr -d '\n'`
 
 # Jenkins > Credentials > (global) > Add Credentials
+# > http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
 curl -X POST -u "$ACCOUNT" -H "$CRUMB" $HOST/credentials/store/system/domain/_/createCredentials --data-urlencode 'json={
   "": "0",
   "credentials": {
