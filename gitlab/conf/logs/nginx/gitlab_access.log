@@ -32,3 +32,4 @@
 172.19.0.1 - - [14/Jan/2018:10:17:06 +0000] "GET / HTTP/1.1" 302 96 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
 172.19.0.1 - - [14/Jan/2018:10:17:07 +0000] "GET /users/sign_in HTTP/1.1" 200 4000 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
 127.0.0.1 - - [14/Jan/2018:10:17:41 +0000] "GET /help HTTP/1.1" 200 29444 "" "curl/7.56.1"
+127.0.0.1 - - [14/Jan/2018:10:18:42 +0000] "GET /help HTTP/1.1" 200 29444 "" "curl/7.56.1"

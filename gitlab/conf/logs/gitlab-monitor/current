@@ -42,3 +42,27 @@
 2018-01-14_10:17:54.77845 - -> /database
 2018-01-14_10:17:56.64176 127.0.0.1 - - [14/Jan/2018:10:17:56 UTC] "GET /process HTTP/1.1" 200 1158
 2018-01-14_10:17:56.64204 - -> /process
+2018-01-14_10:18:07.44706 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:18:07.46143 127.0.0.1 - - [14/Jan/2018:10:18:07 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:18:07.46185 - -> /sidekiq
+2018-01-14_10:18:09.80352 127.0.0.1 - - [14/Jan/2018:10:18:09 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:18:09.80713 - -> /database
+2018-01-14_10:18:11.64069 127.0.0.1 - - [14/Jan/2018:10:18:11 UTC] "GET /process HTTP/1.1" 200 1158
+2018-01-14_10:18:11.64099 - -> /process
+2018-01-14_10:18:22.44605 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:18:22.46025 127.0.0.1 - - [14/Jan/2018:10:18:22 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:18:22.46080 - -> /sidekiq
+2018-01-14_10:18:24.67048 127.0.0.1 - - [14/Jan/2018:10:18:24 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:18:24.67096 - -> /database
+2018-01-14_10:18:26.65106 127.0.0.1 - - [14/Jan/2018:10:18:26 UTC] "GET /process HTTP/1.1" 200 1145
+2018-01-14_10:18:26.65160 - -> /process
+2018-01-14_10:18:37.44903 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:18:37.47035 127.0.0.1 - - [14/Jan/2018:10:18:37 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:18:37.47062 - -> /sidekiq
+2018-01-14_10:18:39.68551 127.0.0.1 - - [14/Jan/2018:10:18:39 UTC] "GET /database HTTP/1.1" 200 52982
+2018-01-14_10:18:39.68601 - -> /database
+2018-01-14_10:18:41.64156 127.0.0.1 - - [14/Jan/2018:10:18:41 UTC] "GET /process HTTP/1.1" 200 1160
+2018-01-14_10:18:41.64174 - -> /process
+2018-01-14_10:18:52.44244 Passing 'script' command to redis as is; administrative commands cannot be effectively namespaced and should be called on the redis connection directly; passthrough has been deprecated and will be removed in redis-namespace 2.0 (at /opt/gitlab/embedded/lib/ruby/gems/2.3.0/gems/gitlab-monitor-1.9.0/lib/gitlab_monitor/sidekiq.rb:127:in `block in ensure_queue_job_stats_script_loaded')
+2018-01-14_10:18:52.45568 127.0.0.1 - - [14/Jan/2018:10:18:52 UTC] "GET /sidekiq HTTP/1.1" 200 4562
+2018-01-14_10:18:52.45612 - -> /sidekiq
