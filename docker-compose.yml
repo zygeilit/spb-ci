@@ -41,8 +41,8 @@ services:
         external_url 'http://gitlab.example.com:30080'
         gitlab_rails['gitlab_shell_ssh_port'] = 30022
     ports:
-      - "30080:30080"
-      - "30022:22"
+      - $gitlab_port:30080
+      - 30022:22
     volumes:
       - ./gitlab/conf/config:/etc/gitlab
       - ./gitlab/conf/logs:/var/log/gitlab
@@ -58,11 +58,11 @@ services:
     links:
       - gitlab
     expose:
-      - "8080"
+      - 8080
     ports:
-      - "5002:8080"
+      - $jenkins_port:8080
     volumes:
-      - ./jenkins/mounts:/var/external-mounts
+      - ./jenkins/mounts:$external_mounts_path
     logging:
       driver: json-file
       options:
@@ -76,10 +76,10 @@ services:
     build: ./docserver
     container_name: docserver
     expose:
-      - "3000"
+      - 3000
     ports:
-      - "3002:3000"
+      - $docserver_port:3000
     volumes:
-      - ./docserver/mounts:/var/external-mounts
+      - ./docserver/mounts:$external_mounts_path
     stdin_open: true
     tty: true
