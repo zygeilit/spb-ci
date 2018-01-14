@@ -6,6 +6,7 @@ services:
     restart: always
     image: gitlab/gitlab-ce
     hostname: 'gitlab.example.com'
+    container_name: gitlab
     expose:
       - "80"
       - "22"
@@ -23,6 +24,7 @@ services:
     restart: always
     build:
       context: ./jenkins
+    container_name: jenkins
     links:
       - gitlab
     expose:
@@ -42,6 +44,7 @@ services:
   docserver:
     restart: always
     build: ./docserver
+    container_name: docserver
     expose:
       - "3000"
     ports: 
