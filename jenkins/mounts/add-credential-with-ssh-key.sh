@@ -4,6 +4,7 @@
 HOST=http://127.0.0.1:8080
 ACCOUNT=root:12345678
 # 获取crumb token，用来使用jenkins remote api
+# > https://support.cloudbees.com/hc/en-us/articles/219257077-CSRF-Protection-Explained
 CRUMB=`curl -u "$ACCOUNT" $HOST'/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'`
 # grep [^-]$: 获取行结尾不是-的内容，抓取私钥内容
 # tr -d '\n': 删除换行符号
