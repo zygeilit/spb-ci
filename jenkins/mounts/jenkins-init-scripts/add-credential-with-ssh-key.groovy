@@ -1,4 +1,9 @@
 
+// 添加权限到jenkins
+// 使用jenkins的标准方式，添加初始化执行的groovy脚本
+// 脚本调用sh脚本执行添加权限的操作
+// jnekins-init-scripts目录下的文件会被copy到jenkins/init.grooy.d目录下，该目录下的groovy文件会在init时，自动执行
+
 def env = System.getenv()
 def engine = new groovy.text.SimpleTemplateEngine()
 def sout = new StringBuffer(), serr = new StringBuffer()
