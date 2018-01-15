@@ -1,5 +1,4 @@
 // > https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup/
- 
 import jenkins.model.*
 import hudson.security.*
 import jenkins.security.s2m.AdminWhitelistRule
