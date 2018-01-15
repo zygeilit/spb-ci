@@ -41,8 +41,8 @@ services:
         external_url 'http://gitlab.example.com:30080'
         gitlab_rails['gitlab_shell_ssh_port'] = 30022
     ports:
-      - $gitlab_port:30080
-      - 30022:22
+      - "$gitlab_port:30080"
+      - "30022:30022"
     volumes:
       - ./gitlab/conf/config:/etc/gitlab
       - ./gitlab/conf/logs:/var/log/gitlab
@@ -52,13 +52,15 @@ services:
     restart: always
     build:
       context: ./jenkins
+      args:
+        - external_mounts_path=$external_mounts_path
     container_name: jenkins
     depends_on:
       - gitlab
     links:
       - gitlab
     expose:
-      - 8080
+      - "8080"
     ports:
       - $jenkins_port:8080
     volumes:

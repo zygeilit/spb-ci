@@ -1,4 +1,3 @@
-# > https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup/
 
 FROM centos
 
@@ -32,8 +31,9 @@ RUN yum install -y epel-release && \
 # > https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup/
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
-# 复制自定义初始化脚本到jenkins配置中
-# init.groovy.d中的脚本，jenkins在初始化时，都会默认执行
-RUN cp $external_mounts_path/init-jenkins-security.groovy /usr/share/jenkins/ref/init.groovy.d/init-jenkins-security.groovy
+ARG external_mounts_path
+
+# 复制自定义初始化脚本到jenkins配置中 | init.groovy.d中的脚本，jenkins在初始化时，都会默认执行
+# RUN cp $external_mounts_path/init-jenkins-security.groovy /usr/share/jenkins/ref/init.groovy.d/init-jenkins-security.groovy
 
 ENTRYPOINT service jenkins start && /bin/bash
