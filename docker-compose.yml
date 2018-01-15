@@ -26,6 +26,8 @@ services:
       - postgresql:postgresql
       - redis:redis
     environment:
+      external_common_mounts_path: $external_common_mounts_path
+      gitlab_root_pass: $gitlab_root_pass
       GITLAB_OMNIBUS_CONFIG: |
         postgresql['enable'] = false
         gitlab_rails['db_username'] = "gitlab"
@@ -44,6 +46,8 @@ services:
       - "$gitlab_port:30080"
       - "30022:30022"
     volumes:
+      - ./mounts:$external_common_mounts_path
+      - ./gitlab/mounts:$external_mounts_path
       - ./gitlab/conf/config:/etc/gitlab
       - ./gitlab/conf/logs:/var/log/gitlab
       - ./gitlab/conf/data:/var/opt/gitlab
@@ -63,6 +67,7 @@ services:
     depends_on:
       - gitlab
     volumes:
+      - ./mounts:$external_common_mounts_path
       - ./jenkins/mounts:$external_mounts_path
       - ./jenkins/conf:/var/jenkins_home
     environment:
@@ -70,6 +75,7 @@ services:
       - jenkins_pass=$jenkins_pass
       - jenkins_home_path=$jenkins_home_path
       - external_mounts_path=$external_mounts_path
+      - external_common_mounts_path=$external_common_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
       - gitlab_port=$gitlab_port
     stdin_open: true
