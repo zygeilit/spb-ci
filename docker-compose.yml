@@ -71,7 +71,7 @@ services:
       - jenkins_home_path=$jenkins_home_path
       - external_mounts_path=$external_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
-      - gitlab_private_token=$gitlab_private_token
+      - gitlab_port=$gitlab_port
     stdin_open: true
     tty: true
 
