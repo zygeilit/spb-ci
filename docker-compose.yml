@@ -62,7 +62,7 @@ services:
     expose:
       - "8080"
     ports:
-      - $jenkins_port:8080
+      - "$jenkins_port:8080"
     volumes:
       - ./jenkins/mounts:$external_mounts_path
     environment:
@@ -83,7 +83,7 @@ services:
     expose:
       - 3000
     ports:
-      - $docserver_port:3000
+      - "$docserver_port:3000"
     volumes:
       - ./docserver/mounts:$external_mounts_path
     stdin_open: true
