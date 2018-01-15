@@ -8,7 +8,7 @@ ACCOUNT=root:12345678
 CRUMB=`curl -u "$ACCOUNT" $HOST'/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'`
 # grep [^-]$: 获取行结尾不是-的内容，抓取私钥内容
 # tr -d '\n': 删除换行符号
-SSHKEY_PRIVATE_KEY=`cat /var/lib/jenkins/.ssh/id_rsa | grep [^-]$ | tr -d '\n'`
+SSHKEY_PRIVATE_KEY=`cat $jenkins_home_path/.ssh/id_rsa | grep [^-]$ | tr -d '\n'`
 
 # Jenkins > Credentials > (global) > Add Credentials
 # > http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/

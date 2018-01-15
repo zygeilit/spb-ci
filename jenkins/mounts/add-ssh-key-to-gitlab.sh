@@ -3,7 +3,7 @@
 
 # 参数
 PRIVATE_TOKEN=zoH2FsNGh4NYFiX9spHe
-SSHKEY_KEY=`cat /var/lib/jenkins/.ssh/id_rsa.pub`
+SSHKEY_KEY=`cat $jenkins_home_path/.ssh/id_rsa.pub`
 
 # https://docs.gitlab.com/ce/api/users.html#add-ssh-key
 # 添加ssh-key，使用Private token，post请求
