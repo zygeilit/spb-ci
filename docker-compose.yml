@@ -61,6 +61,8 @@ services:
       - "8080"
     ports:
       - "$jenkins_port:8080"
+    depends_on:
+      - gitlab
     volumes:
       - ./jenkins/mounts:$external_mounts_path
       - ./jenkins/conf:/var/jenkins_home

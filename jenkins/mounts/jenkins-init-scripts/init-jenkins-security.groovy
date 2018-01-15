@@ -1,5 +1,4 @@
 
-// > https://technologyconversations.com/2017/06/16/automating-jenkins-docker-setup/
 // 初始化jenkins服务时，需要手动的访问jenkins服务地址初始化服务，并注册root用户
 // 手动方式太依赖用户行为，服务器之间无法自动初始化
 // 该脚本，自动初始化jenkins，并且注册root用户
