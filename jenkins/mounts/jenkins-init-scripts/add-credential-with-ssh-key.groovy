@@ -17,6 +17,6 @@ def template = engine.createTemplate('$external_mounts_path/$add_credential_file
 def proc = template.toString().execute()
 
 proc.consumeProcessOutput(sout, serr)
-proc.waitForOrKill(1000)
+proc.waitForOrKill(20000)
 
 println sout
