@@ -4,7 +4,7 @@
 # 参数
 USERID=1
 SSHKEY_KEY=`cat $jenkins_home_path/.ssh/id_rsa.pub`
-GITLAB_PRIVATE_TOKEN=`cat $external_mounts_path/gitlab-private-token`
+GITLAB_PRIVATE_TOKEN=`cat $external_common_mounts_path/gitlab-private-token`
 
 # POST请求参数
 DATA=`cat <<EOF
