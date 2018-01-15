@@ -55,7 +55,6 @@ services:
       args:
         - external_mounts_path=$external_mounts_path
         - jenkins_home_path=$jenkins_home_path
-        - jenkins_init_groovy_path=$jenkins_init_groovy_path
     container_name: jenkins
     expose:
       - "8080"
@@ -72,6 +71,7 @@ services:
       - jenkins_home_path=$jenkins_home_path
       - external_mounts_path=$external_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
+      - gitlab_private_token=$gitlab_private_token
     stdin_open: true
     tty: true
 
