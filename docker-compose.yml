@@ -126,6 +126,8 @@ services:
       - mongodb
     volumes:
       - ./doc-server/mounts:$external_mounts_path
+    environment:
+      - external_mounts_path=$external_mounts_path
     stdin_open: true
     tty: true
 
