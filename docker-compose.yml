@@ -86,6 +86,8 @@ services:
   docserver:
     restart: always
     build: ./docserver
+      args:
+        - external_mounts_path=$external_mounts_path
     container_name: docserver
     expose:
       - 3000
