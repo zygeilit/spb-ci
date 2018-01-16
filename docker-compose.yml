@@ -29,7 +29,6 @@ services:
       - redis
     environment:
       external_common_mounts_path: $external_common_mounts_path
-      gitlab_root_pass: $gitlab_root_pass
       GITLAB_OMNIBUS_CONFIG: |
         postgresql['enable'] = false
         gitlab_rails['db_username'] = "gitlab"
@@ -110,8 +109,8 @@ services:
       - ./mongodb-interface/mounts:$external_mounts_path
     environment:
       - ME_CONFIG_OPTIONS_EDITORTHEME=ambiance
-      - ME_CONFIG_BASICAUTH_USERNAME=root
-      - ME_CONFIG_BASICAUTH_PASSWORD=12345678
+      - ME_CONFIG_BASICAUTH_USERNAME=$mongodb_interface_user
+      - ME_CONFIG_BASICAUTH_PASSWORD=$mongodb_interface_pass
     stdin_open: true
     tty: true
 
