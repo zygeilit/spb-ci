@@ -83,22 +83,14 @@ services:
     stdin_open: true
     tty: true
 
-  docserver:
+  mongodb:
     restart: always
-    build:
-      context: ./docserver
-    container_name: docserver
-    depends_on:
-      - gitlab
+    image: mongo
+    container_name: mongodb
     links:
       - gitlab:gitlab
-    expose:
-      - 3000
-    ports:
-      - "$docserver_port:3000"
     volumes:
-      - ./docserver/mounts:$external_mounts_path
-    environment:
-      - external_mounts_path=$external_mounts_path
+      - ./mongodb/conf:/data/db
+      - ./mongodb/mounts:$external_mounts_path
     stdin_open: true
     tty: true

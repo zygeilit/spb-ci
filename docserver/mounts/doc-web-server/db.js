@@ -1,4 +1,3 @@
-
 var MongoClient = require('mongodb').MongoClient
 
 var state = {
@@ -7,7 +6,6 @@ var state = {
 
 MongoClient.connect('mongodb://localhost:27017/test', function(err, db) {
   if (err) return
-
   var collection = db.collection('foods')
   collection.insert({name: 'taco', tasty: true}, function(err, result) {
     collection.find({name: 'taco'}).toArray(function(err, docs) {
@@ -16,6 +14,9 @@ MongoClient.connect('mongodb://localhost:27017/test', function(err, db) {
     })
   })
 })
+
+
+exports.state = state
 
 exports.connect = function(url, done) {
   if (state.db) return done()

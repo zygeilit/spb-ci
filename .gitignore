@@ -1,3 +1,6 @@
+
 /gitlab/conf/*
 /jenkins/conf/*
+/mongodb/conf/*
+
 /node_modules
