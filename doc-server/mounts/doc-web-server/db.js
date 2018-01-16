@@ -4,7 +4,7 @@ var state = {
   db: null
 }
 
-MongoClient.connect('mongodb://localhost:27017/test', function(err, db) {
+MongoClient.connect('mongodb://mongodb:27017/test', function(err, db) {
   if (err) return
   var collection = db.collection('foods')
   collection.insert({name: 'taco', tasty: true}, function(err, result) {
@@ -14,7 +14,6 @@ MongoClient.connect('mongodb://localhost:27017/test', function(err, db) {
     })
   })
 })
-
 
 exports.state = state
 
