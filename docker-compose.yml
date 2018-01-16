@@ -25,8 +25,8 @@ services:
     hostname: 'gitlab.example.com'
     container_name: gitlab
     links:
-      - postgresql:postgresql
-      - redis:redis
+      - postgresql
+      - redis
     environment:
       external_common_mounts_path: $external_common_mounts_path
       gitlab_root_pass: $gitlab_root_pass
@@ -103,6 +103,8 @@ services:
       - "$mongodb_interface_port:8081"
     links:
       - mongodb:mongo
+    depends_on:
+      - mongodb
     volumes:
       - ./mongodb-interface/conf:/data/db
       - ./mongodb-interface/mounts:$external_mounts_path
@@ -110,4 +112,21 @@ services:
       - ME_CONFIG_OPTIONS_EDITORTHEME=ambiance
       - ME_CONFIG_BASICAUTH_USERNAME=root
       - ME_CONFIG_BASICAUTH_PASSWORD=12345678
+    stdin_open: true
+    tty: true
+
+  doc-server:
+    restart: always
+    build: ./doc-server
+    container_name: doc-server
+    ports:
+      - "$doc_server_port:3000"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    volumes:
+      - ./doc-server/mounts:$external_mounts_path
+    stdin_open: true
+    tty: true
 
