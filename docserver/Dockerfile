@@ -31,7 +31,5 @@ RUN npm install express-generator -g && \
     express spb-document-server && \
     cd spb-document-server && \
     npm install express morgan cookie-parser body-parser debug serve-favicon -save
-    
-ARG external_mounts_path
 
-ENTRYPOINT node $external_mounts_path/web-server/bin/www && /bin/sh
+CMD node $external_mounts_path/web-server/bin/www && tail -F $external_mounts_path/web-server/error.log

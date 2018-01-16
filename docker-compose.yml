@@ -85,15 +85,20 @@ services:
 
   docserver:
     restart: always
-    build: ./docserver
-      args:
-        - external_mounts_path=$external_mounts_path
+    build:
+      context: ./docserver
     container_name: docserver
+    depends_on:
+      - gitlab
+    links:
+      - gitlab:gitlab
     expose:
       - 3000
     ports:
       - "$docserver_port:3000"
     volumes:
       - ./docserver/mounts:$external_mounts_path
+    environment:
+      - external_mounts_path=$external_mounts_path
     stdin_open: true
     tty: true
