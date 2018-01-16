@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/zygeilit/spb-ci/issues"
   },
-  "homepage": "https://github.com/zygeilit/spb-ci#readme"
+  "homepage": "https://github.com/zygeilit/spb-ci#readme",
+  "dependencies": {
+    "mongodb": "^3.0.1"
+  }
 }

@@ -33,4 +33,5 @@ RUN npm install express-generator -g && \
     npm install express morgan cookie-parser body-parser debug serve-favicon -save
 
 CMD node $external_mounts_path/doc-web-server/bin/www && \ 
+    service mongod start && \
     tail -F $external_mounts_path/doc-web-server/error.log
