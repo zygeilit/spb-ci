@@ -1,21 +1,345 @@
-<!DOCTYPE html>  
-<html lang="en">  
-  <head>
-    <meta charset="utf-8">
-    <title>北森文档站点</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="shortcut icon" href="/images/favicon.ico">
 
-    <!-- styles -->
-    <link href="stylesheets/style.css" rel="stylesheet">
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/javascripts/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/theme.min.css" />
 
-  </head>
-  <body>
-    Nodejs Express EJS Template
-  </body>
+  <!-- javascript -->
+  <script src="/javascripts/theme.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+  <div class="navbar navbar-light bg-transparent navbar-expand-lg" role="banner">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/images/logo-dark.png" class="mr-2 img-fluid" />
+        React
+      </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Home Pages
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="index.html">Home 1 (Current)</a>
+              <a class="dropdown-item" href="index2.html">Home 2 (Slider)</a>
+              <a class="dropdown-item" href="index3.html">Home 3 (Off-canvas menu)</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Showcase
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="features.html">Features</a>
+              <a class="dropdown-item" href="services.html">Services</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Pricing
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="pricing.html">Pricing charts</a>
+              <a class="dropdown-item" href="charts.html">Comparison tables</a>
+            </div>
+          </li>
+          <li class="nav-item active dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              More pages
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="aboutus.html">About us</a>
+              <a class="dropdown-item" href="contactus.html">Contact us</a>
+              <a class="dropdown-item" href="gallery.html">Gallery</a>
+              <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+              <a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a>
+              <a class="dropdown-item" href="invoice.html">Invoice page</a>
+              <a class="dropdown-item" href="timeline.html">Timeline Page</a>
+              <a class="dropdown-item" href="docs.html">API Documentation</a>
+              <a class="dropdown-item" href="support.html">Support</a>
+              <a class="dropdown-item" href="support-topic.html">Support Topic</a>
+              <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+              <a class="dropdown-item" href="status.html">Status</a>
+              <a class="dropdown-item" href="signup.html">Sign Up & Sign In</a>
+              <a class="dropdown-item" href="signup-rotate.html">Sign Up Miscellaneous</a>
+              <a class="dropdown-item" href="404.html">404 Page</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-extend">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Components
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-extend-menu" role="menu">
+              <div class="row">
+                <div class="col-md-3">
+                  <a class="dropdown-item" href="docs/alerts.html"><i class="ion-alert-circled"></i> Alerts</a>
+                  <a class="dropdown-item" href="docs/animations.html"><i class="ion-wand"></i> Animations</a>
+                  <a class="dropdown-item" href="docs/badges.html"><i class="ion-ios-pricetag-outline"></i> Badges</a>
+                  <a class="dropdown-item" href="docs/buttons.html"><i class="ion-ios-paperplane"></i> Buttons</a>
+                  <a class="dropdown-item" href="docs/button-groups.html"><i class="ion-ios-browsers"></i> Button groups</a>
+                  <a class="dropdown-item" href="docs/cards.html"><i class="ion-ios-albums-outline"></i> Cards</a>
+                </div>
+                <div class="col-md-3">
+                  <a class="dropdown-item" href="docs/carousel.html"><i class="ion-android-arrow-dropright-circle"></i> Carousel</a>
+                  <a class="dropdown-item" href="docs/accordion.html"><i class="ion-navicon"></i> Accordion</a>
+                  <a class="dropdown-item" href="docs/cta.html"><i class="ion-funnel"></i> Call to action</a>
+                  <a class="dropdown-item" href="docs/dropdowns.html"><i class="ion-arrow-down-b"></i> Dropdowns</a>
+                  <a class="dropdown-item" href="docs/forms.html"><i class="ion-clipboard"></i> Forms</a>
+                  <a class="dropdown-item" href="docs/input-groups.html"><i class="ion-toggle"></i> Input groups</a>
+                </div>
+                <div class="col-md-3">
+                  <a class="dropdown-item" href="docs/icons.html"><i class="ion-social-octocat"></i> Icons</a>
+                  <a class="dropdown-item" href="docs/list-groups.html"><i class="ion-ios-list-outline"></i> List groups</a>
+                  <a class="dropdown-item" href="docs/modals.html"><i class="ion-monitor"></i> Modals</a>
+                  <a class="dropdown-item" href="docs/navs.html"><i class="ion-navigate"></i> Navs</a>
+                  <a class="dropdown-item" href="docs/navbars.html"><i class="ion-navicon-round"></i> Navbars</a>
+                  <a class="dropdown-item" href="docs/plugins.html"><i class="ion-compose"></i> New plugins</a>
+                </div>
+                <div class="col-md-3">
+                  <a class="dropdown-item" href="docs/progress.html"><i class="ion-stats-bars d-inline-block" style="transform: rotate(90deg);"></i> Progress bars</a>
+                  <a class="dropdown-item" href="docs/stats-cards.html"><i class="ion-arrow-graph-up-right"></i> Stats cards</a>
+                  <a class="dropdown-item" href="docs/tables.html"><i class="ion-grid"></i> Tables</a>
+                  <a class="dropdown-item" href="docs/typography.html"><i class="ion-paintbrush"></i> Typography</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Blog
+              <i class="ion-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="blog.html">Blog</a>
+              <a class="dropdown-item" href="blog-cols.html">Blog cols</a>
+              <a class="dropdown-item" href="blog-timeline.html">Blog timeline</a>
+              <a class="dropdown-item" href="blogpost.html">Blog Post</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="docs/intro.html" class="nav-link nav-link--rounded">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="support-topic-hero">
+    <div class="container">
+      <form>
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search help topics" />
+      </form>
+    </div>
+  </div>
+
+  <div class="support-topic-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-none d-md-block">
+          <div class="support-topic-sidebar">
+            <h4>
+              Related articles
+            </h4>
+            <a href="#" class="related-link">
+              How do I setup my account information?
+            </a>
+            <a href="#" class="related-link">
+              How can I switch to a paid plan?
+            </a>
+            <a href="#" class="related-link">
+              What is this product?
+            </a>
+            <a href="#" class="related-link">
+              How do I update my password?
+            </a>
+            <a href="#" class="related-link">
+              Why was my credit card declined?
+            </a>
+            <a href="#" class="related-link">
+              How can I use the most secret product feature you offer?
+            </a>
+            <a href="#" class="related-link">
+              Is there a cancellation fee?
+            </a>
+            <a href="#" class="related-link">
+              How many projects can I have?
+            </a>
+            <a href="#" class="related-link">
+              Are there any technical requirements to use this product?
+            </a>
+            <a href="#" class="related-link">
+              Do you have a phone number I can call to?
+            </a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="support-topic-body">
+            <h3 class="topic-title">
+              How do I contact support?
+            </h3>
+            <div class="min-read">
+              3 minutes read
+            </div>
+            <p>
+              React is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly, to improve their experience at all times anywhere they go. Pick the pages that describe your business the best and improve your users experience. Track your progress and learn along all the way automatically.
+            </p>
+            <pre class="bg-light p-3 rounded">class HelloMessage extends React.Component {
+  render() {
+    return Hello {this.props.name};
+  }
+}
+
+ReactDOM.render(&lt;HelloMessage name="John" /&gt;, mountNode);</pre>
+            <p>
+              Focus on creating and growing your projects and websites, and we‘ll take care of spinning up new designs for your users and making sure they’re great. Work with all types of customers right out of the box while still getting paid in your preferred currency.
+            </p>
+            <h4>Step by step</h4>
+            <ul>
+              <li>
+                Gather requirements for new payment integrations and product features, plan and code the implementation and manage its rollout.  
+              </li>
+              <li>
+                Write scalable and maintainable production code.
+              </li>
+              <li>
+                Keep up with latest back-end trends.
+              </li>
+              <li>
+                Integrate with other teams throughout the company to help develop solutions.
+              </li>
+            </ul>
+            <iframe src="https://player.vimeo.com/video/30447882" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p>
+              Focus on creating and growing your projects and websites, and we‘ll take care of spinning up new designs for your users and making sure they’re great. Work with all types of customers right out of the box while still getting paid in your preferred currency.
+            </p>
+            <p>
+              React has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
+            </p>
+            <div class="article-helpful">
+              <p>
+                Was this article helpful?
+                <a href="#">
+                  <i class="ion-thumbsup"></i>
+                </a>
+                <a href="#">
+                  <i class="ion-thumbsdown"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 menu">
+          <h3>Overview</h3>
+          <ul>
+            <li>
+              <a href="features.html">Features</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a href="support.html">Support</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html">Coming soon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 menu">
+          <h3>Menu</h3>
+          <ul>
+            <li>
+              <a href="features.html">About us</a>
+            </li>
+            <li>
+              <a href="services.html">Contact us</a>
+            </li>
+            <li>
+              <a href="aboutus.html">Jobs</a>
+              <a href="aboutus.html" class="hiring">
+                We're hiring!
+              </a>
+            </li>
+            <li>
+              <a href="support.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="blog.html">Status</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 menu">
+          <h3>Social</h3>
+          <ul>
+            <li>
+              <a href="features.html">Youtube</a>
+            </li>
+            <li>
+              <a href="services.html">Facebook</a>
+            </li>
+            <li>
+              <a href="pricing.html">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 newsletter">
+          <div class="signup clearfix">
+            <p>
+              Sign up for the newsletter and we'll inform you of updates, offers and more.
+            </p>
+            <form>
+              <input type="text" name="email" class="form-control" placeholder="Your email address" />
+              <input type="submit" value="Sign up" />
+            </form>
+          </div>
+          <a href="#">
+            <img src="/images/social/social-tw.png" alt="twitter" />
+          </a>
+          <a href="#">
+            <img src="/images/social/social-dbl.png" alt="dribbble" />
+          </a>
+        </div>
+      </div>
+      <div class="credits">
+        <p>Copyright © 2019. React</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
