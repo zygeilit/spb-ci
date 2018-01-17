@@ -81,6 +81,7 @@ services:
       - external_common_mounts_path=$external_common_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
       - gitlab_port=$gitlab_port
+      - jenkins_executer_folder_name=$jenkins_executer_folder_name
     stdin_open: true
     tty: true
 
