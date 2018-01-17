@@ -8,9 +8,9 @@ var state = {
 var MongoClient = require('mongodb').MongoClient
 
 // Connect to the db
-MongoClient.connect("mongodb://localhost:27017/doc-web-server", function(err, db) {
-  if(!err) {
-    console.log("We are connected");
+MongoClient.connect("mongodb://mongodb:27017/doc-web-server", function(err, db) {
+  if(err) {
+    console.log("connected error");
   }
 })
 
