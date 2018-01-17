@@ -41,7 +41,7 @@ services:
         redis['enable'] = false
         gitlab_rails['redis_host'] = 'redis'
         gitlab_rails['redis_port'] = '6379'
-        external_url 'http://gitlab.example.com:5000'
+        external_url 'http://$gitlab_host_name:5000'
         gitlab_rails['gitlab_shell_ssh_port'] = 30022
     ports:
       - "$gitlab_port:5000"
