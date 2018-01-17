@@ -10,5 +10,4 @@ RUN yum install -y wget && \
 RUN yum install -y git && \
 	git --version
 
-CMD node $external_mounts_path/doc-web-server/bin/www && \ 
-    tail -F $external_mounts_path/doc-web-server/error.log
+# CMD node $external_mounts_path/doc-web-server/bin/www && tail -F $external_mounts_path/doc-web-server/error.log

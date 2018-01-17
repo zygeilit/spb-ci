@@ -7,9 +7,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.put('/api/add', function(req, res, next) {
+router.get('/add', function(req, res, next) {
   var db = new Database()
-  res.render('index', { title: 'Express' });
+  db.insert({ name: 'test/add/01' }).then(function (result) {
+    res.send(JSON.stringify(result))
+  })
 });
 
 module.exports = router;

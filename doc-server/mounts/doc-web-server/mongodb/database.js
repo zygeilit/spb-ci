@@ -1,36 +1,31 @@
 var assert = require('assert')
 var MongoClient = require('mongodb').MongoClient
+var Promise = require('promise')
 
-
-module.exports = function Database (props) {
-  Object.assign(this, {
-    host: 'mongodb',
-    prot: '27017',
-    name: 'doc-web-server',
-    state: {
-      db: null
-    }
-  }, props)
+function Database (props) {
+  this.dbhost = 'mongodb'
+  this.dbport = '27017'
+  this.dbname = 'doc-web-server'
+  this.collection = 'doc.models'
+  this.state = {
+    db: null,
+    client: null
+  }
 }
 
 Database.prototype = {
 
-  test: function () {
-    MongoClient.connect(`mongodb://${this.host}:${this.port}/${this.name}`, function(err, db) {
-      assert.equal(null, err)
-      console.log("Connected successfully to server")
-    })
-  },
-
   connect: function () {
-    return Promise(function (resolve, reject) {
+    var self = this
+    return new Promise(function (resolve, reject) {
       // 已经连接，直接返回db对象
-      if (this.state.db) return resolve(this.state.db)
-      MongoClient.connect(`mongodb://${this.host}:${this.port}/${this.name}`, function(err, db) {
-        if (err) return done(err)
-        console.log("Connected successfully to server")
-        state.db = db
-        resolve(db)
+      if (self.state.db) return resolve(true)
+      MongoClient.connect(`mongodb://${self.dbhost}:${self.dbport}`, function(err, client) {
+        if (err) return resolve(err.toString())
+        // 存储连接对象和库对象，库对象直接传递给指令函数，连接对象用户关闭数据库连接
+        self.state.client = client
+        self.state.db = client.db(self.dbname)
+        resolve(true)
       })
     })
   },
@@ -39,23 +34,27 @@ Database.prototype = {
     return this.state.db
   },
 
-  close: function(done) {
-    if (this.state.db) {
-      this.state.db.close(function(err, result) {
-        state.db = null
-        done(err)
+  close: function() {
+    var self = this
+    if (self.state.db) {
+      self.state.client.close(function(err, result) {
+        self.state.db = null
       })
     }
   },
 
-  insert: function (cname, doc) {
+  insert: function (doc, cname) {
+    var self = this
     return new Promise(function (resolve, reject) {
-      this.connect().then(function () {
-        var collection = this.db.collection(cname)
-        collection.insert(doc).then(result) {
-          resolve(result)
-        }
+      self.connect().then(function () {
+        var collection = self.state.db.collection(cname || self.collection)
+        collection.insert(doc, function () {
+          resolve({ code: 200 })
+          self.close()
+        })
       })
     })
   }
 }
+
+module.exports = Database
