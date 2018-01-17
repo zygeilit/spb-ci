@@ -1,8 +1,0 @@
-{
-  "type": "component",
-  "title": "组件标题",
-  "description": ["文档的描述信息，在文档列表中展示使用"],
-  "content": "## 这是文档内容 \n > 目前只支持markdown语法",
-  "author": "zhangyue@beisen.com",
-  "updateData": "2017-12-21 14:31"
-}

@@ -126,9 +126,10 @@ services:
     depends_on:
       - mongodb
     volumes:
-      - ./doc-server/mounts:$external_mounts_path
+      - ./mounts:$external_common_mounts_path
     environment:
       - external_mounts_path=$external_mounts_path
+      - external_common_mounts_path=$external_common_mounts_path
     stdin_open: true
     tty: true
 
