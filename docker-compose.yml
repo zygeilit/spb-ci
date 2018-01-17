@@ -65,6 +65,8 @@ services:
       - "8080"
     ports:
       - "$jenkins_port:8080"
+    links:
+      - doc-server
     depends_on:
       - gitlab
     volumes:
