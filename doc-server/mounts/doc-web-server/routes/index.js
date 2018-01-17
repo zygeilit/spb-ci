@@ -8,10 +8,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/add', function(req, res, next) {
-  var db = new Database()
-  db.insert({ name: 'test/add/01' }).then(function (result) {
-    res.send(JSON.stringify(result))
-  })
+  var doc = {
+    'type': req.query.type,
+    'author': req.query.author,
+    'keywords': req.query.keywords.split(',')
+  }
+  new Database()
+    .insert(doc)
+    .then(function (result) {
+      res.send(JSON.stringify(result))
+    })
 });
 
 module.exports = router;
