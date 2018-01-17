@@ -22,7 +22,7 @@ services:
   gitlab:
     restart: always
     image: gitlab/gitlab-ce:9.1.0-ce.0
-    hostname: 'gitlab.example.com'
+    hostname: $gitlab_host_name
     container_name: gitlab
     links:
       - postgresql
@@ -41,10 +41,10 @@ services:
         redis['enable'] = false
         gitlab_rails['redis_host'] = 'redis'
         gitlab_rails['redis_port'] = '6379'
-        external_url 'http://gitlab.example.com:30080'
+        external_url 'http://gitlab.example.com:5000'
         gitlab_rails['gitlab_shell_ssh_port'] = 30022
     ports:
-      - "$gitlab_port:30080"
+      - "$gitlab_port:5000"
       - "30022:30022"
     volumes:
       - ./mounts:$external_common_mounts_path
