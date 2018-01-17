@@ -1,42 +1,53 @@
+
+var assert = require('assert')
 var MongoClient = require('mongodb').MongoClient
 
-var state = {
-  db: null
+module.exports = function Database (props) {
+
+  Object.assign(this, props)
+  assert.equal(this, this.dbhost)
+  assert.equal(this, this.dbport)
+  assert.equal(this, this.dbname)
+
+  this.state = { db: null }
 }
 
-MongoClient.connect('mongodb://mongodb:27017/test', function(err, db) {
-  if (err) return
-  var collection = db.collection('foods')
-  collection.insert({name: 'taco', tasty: true}, function(err, result) {
-    collection.find({name: 'taco'}).toArray(function(err, docs) {
-      console.log(docs[0])
-      db.close()
+Database.prototype = {
+
+  connect: function () {
+    return Promise(function (resolve, reject) {
+      // 已经连接，直接返回db对象
+      if (this.state.db) return resolve(this.state.db)
+      MongoClient.connect(this.urlurl, function(err, db) {
+        if (err) return done(err)
+        console.log("Connected successfully to server")
+        state.db = db
+        resolve(db)
+      })
     })
-  })
-})
+  },
 
-exports.state = state
+  get: function () {
+    return this.state.db
+  },
 
-exports.connect = function(url, done) {
-  if (state.db) return done()
+  close: function(done) {
+    if (this.state.db) {
+      this.state.db.close(function(err, result) {
+        state.db = null
+        done(err)
+      })
+    }
+  },
 
-  MongoClient.connect(url, function(err, db) {
-    if (err) return done(err)
-    state.db = db
-    done()
-  })
-}
-
-exports.get = function() {
-  return state.db
-}
-
-exports.close = function(done) {
-  if (state.db) {
-    state.db.close(function(err, result) {
-      state.db = null
-      state.mode = null
-      done(err)
+  insert: function (cname, doc) {
+    return new Promise(function (resolve, reject) {
+      this.connect().then(function () {
+        var collection = this.db.collection(cname)
+        collection.insert(doc).then(result) {
+          resolve(result)
+        }
+      })
     })
   }
 }
