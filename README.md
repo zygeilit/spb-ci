@@ -1,6 +1,6 @@
 # 自动化集成服务
 
-整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现企业内部开发流程化、项目持续交付、自动化部署
+整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现开发流程化、项目持续交付、自动化部署
 
 ## 优势
 * 服务器资源和配置使用 [docker.volumes](https://docs.docker.com/engine/admin/volumes/volumes) 添加进容器，实现资源文件可备份、方便迁移
