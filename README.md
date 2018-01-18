@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-使用 **Docker Composes** 组织服务器，服务资源和配置通过外部文件的方式挂载进Docker容器中，实现服务器资源文件方便迁移、可备份
+使用 Docker Composes 组织服务器，服务资源和配置通过外部文件的方式挂载进Docker容器中，实现服务器资源文件方便迁移、可备份
 
 ### Prerequisites
 
