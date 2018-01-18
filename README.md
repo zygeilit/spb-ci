@@ -2,14 +2,14 @@
 
 整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现开发流程化、项目持续交付、自动化部署
 
-### 优势
+优势
 -----------
 
 * 服务器资源和配置使用 [docker.volumes](https://docs.docker.com/engine/admin/volumes/volumes) 添加进容器，实现资源文件可备份、方便迁移
 
 * 使用 [dockerfile](https://docs.docker.com/engine/reference/builder/)、[docker-compose](https://docs.docker.com/compose/overview/) 配置服务器，使服务可复制，方便部署和操作
 
-### 安装使用
+安装使用
 -----------
 
 把项目clone到本地
@@ -42,24 +42,24 @@ Jenkins: http://localhost:5002
 ./init.sh
 ```
 
-### 先决条件
+先决条件
 -----------
 
 系统中安装了 Docker、Docker Compose，具体的安装步骤可见 [Docker官方文档](https://www.docker.com)
 
-### 目标计划
+目标计划
 -----------
 
 * 在 **spb-ci** 基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的组件标准化方案，可实现PAAS公司组件生态圈
 
 * 持续构建服务、组件生态圈、页面可视化布局的技术模块封装发布，可实现PAAS体系前端技术栈的可复制
 
-### 开发计划
+开发计划
 -----------
 
 计划和任务的拆分，可见 [Projects](https://github.com/zygeilit/spb-ci/projects/2)
 
-### 服务器配置
+服务器配置
 -----------
 
 服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
