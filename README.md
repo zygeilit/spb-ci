@@ -28,7 +28,7 @@ docker attach gitlab
 docker attach jenkins
 ```
 
-访问[Gitlab](http://localhost:5000)初始化root账号，访问[Jenkins](http://localhost:5002)进行安装
+访问已启动Gitlab服务[>>](http://localhost:5000)初始化root账号，访问已启动Jenkins[>>](http://localhost:5002)进行安装
 ```
 ```
 
