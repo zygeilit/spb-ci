@@ -27,20 +27,15 @@ docker-compose up --build -d
 docker attach gitlab
 ```
 进入Jenkins容器，等待服务器自动化配置，配置完毕后关闭Terminal即可
-初始化Jenkins服务
 ```
 docker attach jenkins
 ```
 
-**初始化Gitlab账号**
-
 访问 http://localhost:5000, 初始化root账号
-
-**初始化jenkins服务**
 
 访问 http://localhost:5002, 进行jenkins的初始化配置
 
-
+调用命令行输出化Gitlab服务器和Jenkins服务器的配置
 ```
 ./init.sh
 ```
