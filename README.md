@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+使用 **Docker Composes** 组织服务器，服务资源和配置通过外部文件的方式挂载进Docker容器中，实现服务器资源文件方便迁移、可备份
 
 ### Prerequisites
 
