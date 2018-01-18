@@ -1,4 +1,4 @@
-# 自动化集成服务(spb-ci)
+# 自动化集成服务 -spb-ci
 
 整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现开发流程化、项目持续交付、自动化部署
 
@@ -45,7 +45,7 @@ Jenkins: http://localhost:5002
 
 ### 目标计划
 
-* 在这套自动化服务基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的组件标准化方案，实现PAAS公司组件生态圈。
+* 在spb-ci基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的组件标准化方案，实现PAAS公司组件生态圈。
 
 * 持续构建服务、组件生态圈、页面可视化布局的技术模块封装发布，实现PAAS体系前端技术栈的可复制
 
