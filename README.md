@@ -1,6 +1,6 @@
 # 自动化集成交付部署平台
 
-整合Docker、Jenkins、Gitlab，搭建企业持续集成平台，实现企业内部开发流程化、项目持续交付以及部署
+整合Docker、Jenkins、Gitlab，搭建企业持续集成平台，实现企业内部开发流程化、项目持续交付、自动化部署
 
 ## Getting Started
 
