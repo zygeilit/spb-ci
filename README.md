@@ -3,7 +3,7 @@
 整合Docker、Jenkins、Gitlab，搭建企业持续集成平台，实现企业内部开发流程化、项目持续交付、自动化部署
 
 
-## 特性与优势
+## 优势
 * 服务器资源和配置使用挂载的方式添加进服务器(Docker.volumnes)，实现服务器资源文件方便迁移、可备份
 
 * 使用dockerfile、docker-compose配置服务器，使服务器配置可移植，方便部署和操作
@@ -11,6 +11,8 @@
 * clone项目到本地一键配置服务器
 
 ## Getting Started
+
+
 
 ### Prerequisites
 
