@@ -7,9 +7,6 @@ services:
     image: gitlab/gitlab-ce:9.1.0-ce.0
     hostname: $gitlab_host_name
     container_name: gitlab
-    links:
-      - postgresql
-      - redis
     environment:
       external_common_mounts_path: $external_common_mounts_path
       GITLAB_OMNIBUS_CONFIG: |
