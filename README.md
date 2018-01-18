@@ -47,7 +47,7 @@ Jenkins: http://localhost:5002
 
 * 在 **spb-ci** 基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的组件标准化方案，可实现PAAS公司组件生态圈
 
-* 持续构建服务、组件生态圈、页面可视化布局的技术模块封装发布，实现PAAS体系前端技术栈的可复制
+* 持续构建服务、组件生态圈、页面可视化布局的技术模块封装发布，可实现PAAS体系前端技术栈的可复制
 
 ### 开发计划
 
