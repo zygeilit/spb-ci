@@ -28,7 +28,7 @@ services:
       - postgresql
       - redis
     environment:
-      - external_common_mounts_path=$external_common_mounts_path
+      external_common_mounts_path: $external_common_mounts_path
       GITLAB_OMNIBUS_CONFIG: |
         postgresql['enable'] = false
         gitlab_rails['db_username'] = "gitlab"
