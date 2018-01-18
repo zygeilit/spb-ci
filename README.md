@@ -30,7 +30,7 @@ docker attach jenkins
 
 访问已启动Gitlab服务初始化root账号，访问已启动Jenkins进行安装
 ```
-Gitlab: http://localhost:5000
+Gitlab : http://localhost:5000
 Jenkins: http://localhost:5002
 ```
 
