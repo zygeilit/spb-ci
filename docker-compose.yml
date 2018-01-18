@@ -14,6 +14,8 @@ services:
         gitlab_rails['gitlab_shell_ssh_port'] = $gitlab_ssh_port
     ports:
       - "$gitlab_port:$gitlab_port"
+      # gitlab默认使用ssh22端口，这里配置端口只是把端口指向改变了
+      # 并未在制定端口开启ssh监听
       - "$gitlab_ssh_port:22"
     volumes:
       - ./mounts:$external_common_mounts_path
