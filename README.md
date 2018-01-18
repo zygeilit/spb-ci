@@ -43,3 +43,7 @@ docker attach jenkins
 ### 先决条件
 
 系统中安装了 Docker、Docker Compose，具体的安装步骤可见 [Docker官方文档](http://www.baidu.com)
+
+### 服务器配置
+
+服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
