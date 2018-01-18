@@ -43,19 +43,3 @@ docker attach jenkins
 ### 先决条件
 
 系统中安装了 Docker、Docker Compose，具体的安装步骤可见 [Docker官方文档](http://www.baidu.com)
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html
-* Inspiration
-* etc
