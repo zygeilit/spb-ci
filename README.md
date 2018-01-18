@@ -2,13 +2,10 @@
 
 整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现企业内部开发流程化、项目持续交付、自动化部署
 
-
 ## 优势
 * 服务器资源和配置使用 [挂载的方式](https://docs.docker.com/engine/admin/volumes/volumes) 添加进容器，实现资源文件可备份、方便迁移
 
 * 使用 [dockerfile](https://docs.docker.com/engine/reference/builder/)、[docker-compose](https://docs.docker.com/compose/overview/) 配置服务器，使服务可复制，方便部署和操作
-
-* clone项目到本地一键配置服务器
 
 ## 安装使用
 
