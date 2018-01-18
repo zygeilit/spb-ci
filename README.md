@@ -45,7 +45,7 @@ Jenkins: http://localhost:5002
 
 ### 开发计划
 
-见Projets：[Goto](https://github.com/zygeilit/spb-ci/projects/2)
+[Goto](https://github.com/zygeilit/spb-ci/projects/2)
 
 ### 服务器配置
 
