@@ -2,9 +2,11 @@
 
 整合Docker、Jenkins、Gitlab，搭建企业持续集成平台，实现企业内部开发流程化、项目持续交付、自动化部署
 
-## Getting Started
 
-使用 Docker Composes 组织服务器，服务器的资源和配置通过外部文件的方式挂载进Docker容器中(Volumes)，实现服务器资源文件方便迁移、可备份
+# 特性与优势
+* 使用 Docker Composes 组织服务器，服务器的资源和配置通过外部文件的方式挂载进Docker容器中(Volumes)，实现服务器资源文件方便迁移、可备份
+
+## Getting Started
 
 ### Prerequisites
 
