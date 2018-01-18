@@ -8,7 +8,7 @@
 
 * 使用dockerfile、docker-compose配置服务器，使服务器配置可移植，方便部署和操作
 
-* clone项目到本地一键配置服务器以及启动
+* clone项目到本地一键配置服务器
 
 ## Getting Started
 
