@@ -35,7 +35,7 @@ docker attach jenkins
 ```
 ```
 
-执行init命令
+执行init命令，配置Jenkins和Gitlab的权限和SSH
 ```
 ./init.sh
 ```
