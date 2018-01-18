@@ -49,7 +49,7 @@ Jenkins: http://localhost:5002
 
 ### 目标计划
 
-在这套自动化服务基础之上，结合[spb-builder](https://github.com/zygeilit/spb-builder) 提供的标准化方案，实现PAAS公司组件生态圈
+在这套自动化服务基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的标准化方案，实现PAAS公司组件生态圈
 
 ### 服务器配置
 
