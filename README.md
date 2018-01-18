@@ -33,6 +33,7 @@ docker attach jenkins
 ```
 
 **初始化Gitlab账号**
+
 访问 http://localhost:5000, 初始化root账号
 
 ### Prerequisites
