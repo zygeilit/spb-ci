@@ -4,7 +4,7 @@
 
 
 ## 优势
-* 服务器资源和配置使用[挂载方式](https://docs.docker.com/engine/admin/volumes/volumes)添加进容器，实现服务器资源文件方便迁移、可备份
+* 服务器资源和配置使用 [挂载的方式](https://docs.docker.com/engine/admin/volumes/volumes) 添加进容器，实现服务器资源文件方便迁移、可备份
 
 * 使用dockerfile、docker-compose配置服务器，使服务器配置可移植，方便部署和操作
 
