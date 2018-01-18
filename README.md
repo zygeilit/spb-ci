@@ -1,6 +1,6 @@
 # 项目可持续集成的服务体系
 
-One Paragraph of project description goes here
+持续集成，让产品可以快速并高质量的迭代
 
 ## Getting Started
 
