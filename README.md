@@ -40,6 +40,11 @@ docker attach jenkins
 
 访问 http://localhost:5002, 进行jenkins的初始化配置
 
+
+```
+./init.sh
+```
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
