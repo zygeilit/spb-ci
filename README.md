@@ -13,13 +13,14 @@
 ## Getting Started
 
 **下载**
-
-    git clone git@github.com:zygeilit/spb-ci.git
-
+```
+git clone git@github.com:zygeilit/spb-ci.git
+```
 
 **启动**
-
-    docker-compose up --build -d
+```
+docker-compose up --build -d
+```
 
 ### Prerequisites
 
