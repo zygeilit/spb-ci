@@ -17,7 +17,7 @@
 git clone git@github.com:zygeilit/spb-ci.git
 ```
 
-**启动**
+**创建以及启动Docker服务器**
 ```
 docker-compose up --build -d
 ```
