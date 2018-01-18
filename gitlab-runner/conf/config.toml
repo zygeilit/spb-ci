@@ -1,0 +1,16 @@
+concurrent = 1
+check_interval = 0
+
+[[runners]]
+  name = "button"
+  url = "http://gitlab:5000"
+  token = "08c0fee48ba7e9ab7e76db4bbf1b89"
+  executor = "shell"
+  [runners.cache]
+
+[[runners]]
+  name = "for button"
+  url = "http://gitlab:5000"
+  token = "a30f5a6dba9a4656a378f7d43d4f26"
+  executor = "shell"
+  [runners.cache]

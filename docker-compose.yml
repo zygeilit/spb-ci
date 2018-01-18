@@ -24,6 +24,19 @@ services:
       - ./gitlab/conf/logs:/var/log/gitlab
       - ./gitlab/conf/data:/var/opt/gitlab
 
+  gitlab-runner:
+    restart: always
+    image: gitlab/gitlab-runner
+    container_name: gitlab-runner
+    links:
+      - gitlab
+      - jenkins
+    depends_on:
+      - gitlab
+    volumes:
+      - ./gitlab-runner/conf:/etc/gitlab-runner
+      - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
+
   jenkins:
     restart: always
     build:
