@@ -43,13 +43,13 @@ Jenkins: http://localhost:5002
 
 系统中安装了 Docker、Docker Compose，具体的安装步骤可见 [Docker官方文档](https://www.docker.com)
 
-### 开发计划
-
-计划和任务的拆分，可见 [Projects](https://github.com/zygeilit/spb-ci/projects/2)
-
 ### 目标计划
 
 在这套自动化服务基础之上，结合 [spb-builder](https://github.com/zygeilit/spb-builder) 提供的标准化方案，实现PAAS公司组件生态圈
+
+### 开发计划
+
+计划和任务的拆分，可见 [Projects](https://github.com/zygeilit/spb-ci/projects/2)
 
 ### 服务器配置
 
