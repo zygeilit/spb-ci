@@ -82,6 +82,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html
 * Inspiration
 * etc
