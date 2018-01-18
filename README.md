@@ -13,7 +13,8 @@
 ## Getting Started
 
 **Install**
-     npm install -g mongo-express
+
+    git clone git@github.com:zygeilit/spb-ci.git
 
 ### Prerequisites
 
