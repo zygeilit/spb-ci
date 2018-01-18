@@ -1,5 +1,7 @@
 # 自动化集成服务 -spb-ci
 
+[![Build Status](https://travis-ci.org/mongo-express/mongo-express.svg?branch=master)](https://github.com/zygeilit/spb-ci)
+
 整合Docker、Jenkins、Gitlab，搭建企业持续集成服务，实现开发流程化、项目持续交付、自动化部署
 
 优势
