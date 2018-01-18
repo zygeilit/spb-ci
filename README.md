@@ -12,22 +12,22 @@
 
 ## 安装使用
 
-**下载**
+把项目clone到本地
 ```
 git clone git@github.com:zygeilit/spb-ci.git
 ```
 
-**创建以及启动Docker服务器**
+使用Docker创建镜像以及启动服务器
 ```
 docker-compose up --build -d
 ```
 
-**初始化Gitlab服务**
+进入Gitlab容器，等待服务器自动化配置，配置完毕后关闭Terminal即可
 ```
 docker attach gitlab
 ```
-
-**初始化Jenkins服务**
+进入Jenkins容器，等待服务器自动化配置，配置完毕后关闭Terminal即可
+初始化Jenkins服务
 ```
 docker attach jenkins
 ```
