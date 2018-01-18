@@ -35,7 +35,7 @@ docker attach jenkins
 ```
 ```
 
-调用命令行输出化Gitlab服务器和Jenkins服务器的配置，命令执行完毕后，所有服务器就已经配置成功了
+执行init命令
 ```
 ./init.sh
 ```
