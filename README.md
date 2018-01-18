@@ -40,13 +40,9 @@ docker attach jenkins
 ./init.sh
 ```
 
-### Prerequisites
+### 先决条件
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+系统中安装了 Docker、Docker Compose，具体的安装步骤可见(Docker官方文档)[http://www.baidu.com]
 
 ### Installing
 
