@@ -10,11 +10,11 @@ services:
     environment:
       external_common_mounts_path: $external_common_mounts_path
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://$gitlab_host_name:5000'
-        gitlab_rails['gitlab_shell_ssh_port']=30022
+        external_url 'http://$gitlab_host_name:$gitlab_port'
+        gitlab_rails['gitlab_shell_ssh_port']=$gitlab_ssh_port
     ports:
-      - "$gitlab_port:5000"
-      - "30022:30022"
+      - "$gitlab_port:$gitlab_port"
+      - "$gitlab_ssh_port:$gitlab_ssh_port"
     volumes:
       - ./mounts:$external_common_mounts_path
       - ./gitlab/mounts:$external_mounts_path
