@@ -47,6 +47,10 @@ Jenkins: http://localhost:5002
 
 计划和任务的拆分，可见 [Projects](https://github.com/zygeilit/spb-ci/projects/2)
 
+### 目标计划
+
+在这套CI基础之上，结合[spb-builder](https://github.com/zygeilit/spb-builder) 提供的标准化方案，实现PAAS公司组件生态圈
+
 ### 服务器配置
 
 服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
