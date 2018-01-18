@@ -22,6 +22,16 @@ git clone git@github.com:zygeilit/spb-ci.git
 docker-compose up --build -d
 ```
 
+**初始化Gitlab服务**
+```
+docker attach gitlab
+```
+
+**初始化Jenkins服务**
+```
+docker attach jenkins
+```
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
