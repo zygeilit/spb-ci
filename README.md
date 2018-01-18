@@ -12,7 +12,8 @@
 
 ## Getting Started
 
-
+**Install**
+     npm install -g mongo-express
 
 ### Prerequisites
 
