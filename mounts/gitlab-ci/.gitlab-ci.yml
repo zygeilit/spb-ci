@@ -1,6 +1,6 @@
 # documents: 
 # 1. https://ithelp.ithome.com.tw/articles/10187654
-
+# 2. https://blog.m31271n.com/2017/08/22/%E9%80%9A%E8%BF%87-GitLab-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84-CI-CD-Pipeline/
 
 # stages 预定义 Gitlab-CI 的三个阶段
 # 一個 stages 可以定義一個或多個 job
@@ -8,6 +8,8 @@ stages:
   - build # 编辑阶段
   - test # 测试阶段
   - deploy # 部署阶段
+  # - release
+  # - docker
 
 build_job:
   stage: build
