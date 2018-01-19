@@ -26,6 +26,5 @@ RUN yum install -y bind bind-utils
 RUN systemctl enable named.service 
 
 # Don't know if it's possible to run services without starting this
-CMD /usr/sbin/init
 
-# CMD systemctl start docker && /bin/bash
+CMD systemctl start docker && /bin/bash
