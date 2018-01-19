@@ -1,3 +1,6 @@
+# documents: 
+# 1. https://ithelp.ithome.com.tw/articles/10187654
+
 
 # stages 预定义 Gitlab-CI 的三个阶段
 # 一個 stages 可以定義一個或多個 job
