@@ -1,8 +1,52 @@
 
+# stages 预定义 Gitlab-CI 的三个阶段
+# 一個 stages 可以定義一個或多個 job
 stages:
-  - setup
-  - test
+  - build # 编辑阶段
+  - test # 测试阶段
+  - deploy # 部署阶段
 
-test-echo:
-  stage: setup
-  script: "echo asfsffsdsfsdfsdfdsf"
+build_job:
+  stage: build
+
+  # 不确实是否需要此 image 和用处
+  # job 都是在 Docker 上执行的，因此一开始会需要设定 image ，而它将会成为下面执行 job 的环境
+  image: centos:6
+
+  # job 实际执行的脚本
+  script:
+    - composer install
+
+  # 快找，下次启动同一个 job 的时会再使用
+  cache:
+    untracked: true
+
+  # 会把job编辑的产出物存放起来，提供給其他需要的人使用
+  artifacts:
+    paths:
+      - vendor/
+
+  dependencies:
+    - setup
+
+test_job:
+  stage: test
+  script:
+    - php vendor/bin/codecept run
+
+  # 这个测试要取用 build_job 的 artifacts
+  # 每个 job 都是独立的 container ，互不相关，因此要靠这些设定來传递 Artifacts
+  dependencies:
+    - build_job
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo Deploy OK
+
+  #  job 只在 release 分支上执行
+  only:
+    - release
+
+  # 代表何时会执行，此例是指要手动触发 job
+  when: manual
