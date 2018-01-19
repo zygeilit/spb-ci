@@ -33,3 +33,5 @@ RUN systemctl enable named.service
 # ----------------------------------------end-------------------------------------------------
 
 ENTRYPOINT ["entrypoint.sh"]
+
+CMD /usr/sbin/init
