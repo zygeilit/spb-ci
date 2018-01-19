@@ -8,9 +8,9 @@ NAME=buttontest
 
 gitlab-runner register \
   --non-interactive \
-  --url http://$gitlab_host_name/ \
-  --registration-token $1 \
-  --name $2 \
+  --url "http://$gitlab_host_name" \
+  --registration-token "$1" \
+  --name "$2" \
   --tag-list docker-in-docker \
   # false
   --run-untagged=true \

@@ -22,15 +22,6 @@ git clone git@github.com:zygeilit/spb-ci.git
 docker-compose up --build -d
 ```
 
-进入Gitlab容器，等待服务器自动化配置，配置完毕后关闭Terminal即可
-```
-docker attach gitlab
-```
-进入Jenkins容器，等待服务器自动化配置，配置完毕后关闭Terminal即可
-```
-docker attach jenkins
-```
-
 访问已启动Gitlab服务初始化root账号，访问已启动Jenkins进行安装
 ```
 Gitlab : http://localhost:5000

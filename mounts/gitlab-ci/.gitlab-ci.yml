@@ -5,25 +5,24 @@
 # 4. https://docs.gitlab.com/ee/ci/triggers/README.html#ci-job-token
 # 5. https://docs.gitlab.com/ce/ci/
 
-image: "node"
 # 所有 jobs 的执行环境
-# image:
-#  name: ruby:2.2
-#  entrypoint: ["/bin/bash"]
+image:
+  name: ruby:2.2
+  entrypoint: ["/bin/bash"]
 
 # 可配置services，与Dokcer.service一致
-#services:
+services:
   # 镜像名
-#- name: my-postgres:9.4
+- name: my-postgres:9.4
   # 别名，服务器见可以通过别名关联，Dokcer.links
-#  alias: db-postgres
+  alias: db-postgres
   # It will be translated to Docker's --entrypoint option while creating the container
   # 可重写Docker容器的默认行为
-#  entrypoint: ["/usr/local/bin/db-postgres"]
+  entrypoint: ["/usr/local/bin/db-postgres"]
   # It will be translated to arguments passed to Docker after the image's name
   # 用于启动服务，比如：job需要sql数据库，但需要手动启动服务，这里就可以使用command启动服务
   # command: ["/usr/bin/super-sql", "run"]
-#  command: ["start"]
+  command: ["start"]
 
 
 # stages 预定义 Gitlab-CI 的三个阶段

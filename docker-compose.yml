@@ -10,7 +10,7 @@ networks:
 services:
   gitlab:
     restart: always
-    image: gitlab/gitlab-ce:9.1.0-ce.0
+    image: gitlab/gitlab-ce
     hostname: $gitlab_host_name
     container_name: gitlab
     environment:
