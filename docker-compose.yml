@@ -51,6 +51,7 @@ services:
         aliases:
           - www.gitlab-runner.com
     volumes:
+      - ./mounts:$external_common_mounts_path
       - ./gitlab-runner/conf:/etc/gitlab-runner
       - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
 
