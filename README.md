@@ -22,12 +22,6 @@ git clone git@github.com:zygeilit/spb-ci.git
 docker-compose up --build -d
 ```
 
-访问已启动Gitlab服务初始化root账号，访问已启动Jenkins进行安装
-```
-Gitlab : http://localhost:5000
-Jenkins: http://localhost:5002
-```
-
 执行init命令，配置Jenkins和Gitlab的权限和SSH
 ```
 ./init.sh
