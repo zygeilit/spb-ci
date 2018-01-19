@@ -50,6 +50,8 @@ services:
       gitlab-network:
         aliases:
           - www.gitlab-runner.com
+    environment:
+      - gitlab_host_name=$gitlab_host_name
     volumes:
       - ./mounts:$external_common_mounts_path
       - ./gitlab-runner/conf:/etc/gitlab-runner
