@@ -1,7 +1,12 @@
 version: '3.4'
 
-services:
+# 内部网络，提供gitlab和gitlab-runner使用
+# 可定义aliases，使用内部网络的服务器，可直接通过aliases访问到对应主机，不需要使用links
+networks:
+  gitlab-network:
+    driver: bridge
 
+services:
   gitlab:
     restart: always
     image: gitlab/gitlab-ce:9.1.0-ce.0
@@ -17,6 +22,13 @@ services:
       # gitlab默认使用ssh22端口，这里配置端口只是把端口指向改变了
       # 并未在制定端口开启ssh监听
       - "$gitlab_ssh_port:22"
+    networks:
+      gitlab-network:
+        # 内部网扩中暴露gitlab的host别名，提供给gitlab-runner使用
+        # 在gitlab-runner中执行pipeline.job时，会请求项目的ssh中的连接，就是$gitlab_host_name
+        # 使用别名直接访问内部主机的host，而不是依赖外部提供的host，解耦更强，方便复用
+        aliases:
+          - $gitlab_host_name
     volumes:
       - ./mounts:$external_common_mounts_path
       - ./gitlab/mounts:$external_mounts_path
@@ -33,6 +45,10 @@ services:
       - jenkins
     depends_on:
       - gitlab
+    networks:
+      gitlab-network:
+        aliases:
+          - www.gitlab-runner.com
     volumes:
       - ./gitlab-runner/conf:/etc/gitlab-runner
       - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
@@ -117,4 +133,5 @@ services:
       - external_common_mounts_path=$external_common_mounts_path
     stdin_open: true
     tty: true
+
 
