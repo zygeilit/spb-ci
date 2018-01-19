@@ -59,6 +59,8 @@ services:
       - ./mounts:$external_common_mounts_path
       - ./gitlab-runner/conf:/etc/gitlab-runner
       - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
+    stdin_open: true
+    tty: true
 
   jenkins:
     restart: always
