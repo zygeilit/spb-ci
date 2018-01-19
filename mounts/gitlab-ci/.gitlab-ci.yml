@@ -13,7 +13,7 @@ image:
 # 可配置services，与Dokcer.service一致
 services:
   # 镜像名
-- name: my-postgres:9.4
+- name: postgres:9.4
   # 别名，服务器见可以通过别名关联，Dokcer.links
   alias: db-postgres
   # It will be translated to Docker's --entrypoint option while creating the container
@@ -38,7 +38,7 @@ build_job:
 
   # job 实际执行的脚本
   script:
-    - node -v
+    - which psql
 
   # 快找，下次启动同一个 job 的时会再使用
   cache:

@@ -39,7 +39,10 @@ services:
 
   gitlab-runner:
     restart: always
-    image: gitlab/gitlab-runner
+    build: 
+      context: ./gitlab-runner
+    # 安装docker，但，daemon无法启动过
+    # image: gitlab/gitlab-runner
     container_name: gitlab-runner
     links:
       - gitlab
