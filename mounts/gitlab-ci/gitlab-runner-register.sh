@@ -6,7 +6,7 @@
 REG_TOKEN=MFxQG6tyJx5W9zZNPGQz
 NAME=buttontest
 
-docker exec -it gitlab-runner gitlab-runner register \
+gitlab-runner register \
   --non-interactive \
   --url http://$gitlab_host_name/ \
   --registration-token $1 \
