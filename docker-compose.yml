@@ -61,6 +61,8 @@ services:
       - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
     stdin_open: true
     tty: true
+    # 提权，不然使用 systemctl 命令会报错
+    privileged: true
 
   jenkins:
     restart: always
