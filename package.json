@@ -23,7 +23,8 @@
     "nodejs",
     "mongodb",
     "sh",
-    "dockerfile"
+    "dockerfile",
+    "构建"
   ],
   "author": "zhangyue@icloud.com",
   "license": "ISC",
