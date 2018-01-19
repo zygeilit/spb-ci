@@ -32,7 +32,7 @@ RUN systemctl enable named.service
 # ------------------------------解决在centos7 systemd 权限bug中---------------------------------
 # ----------------------------------------end-------------------------------------------------
 
-ENTRYPOINT systemctl start docker
+# ENTRYPOINT systemctl start docker
 
 CMD /usr/sbin/init
 
