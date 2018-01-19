@@ -36,6 +36,6 @@ RUN systemctl enable named.service
 # ------------------------------解决在centos7 systemd 权限bug中---------------------------------
 # ----------------------------------------end-------------------------------------------------
 
-CMD /usr/sbin/init && \
+ENTRYPOINT /usr/sbin/init && \
 	systemctl start docker && \
 	gitlab-runner run
