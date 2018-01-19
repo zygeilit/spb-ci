@@ -32,15 +32,17 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 RUN yum install -y bind bind-utils
 RUN systemctl enable named.service
 
+RUN /usr/sbin/init
+
 # --------------------------------------------------------------------------------------------
 # ------------------------------解决在centos7 systemd 权限bug中---------------------------------
 # ----------------------------------------end-------------------------------------------------
 
 # 把命令复制到bin目录下，让ENTRYPOINT可执行
-COPY ./entrypoint.sh /usr/bin/
+# COPY ./entrypoint.sh /usr/bin/
+# RUN chmod 755 /usr/bin/entrypoint.sh
 
-RUN chmod 755 /usr/bin/entrypoint.sh
-
-ENTRYPOINT ["/usr/sbin/init", "entrypoint.sh"]
+# 初始化服务，用于systemctl命令，解决权限问题
+ENTRYPOINT ["systemctl start docker", "gitlab-runner run"]
 
 CMD [""]
