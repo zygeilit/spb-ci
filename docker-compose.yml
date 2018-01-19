@@ -2,6 +2,7 @@ version: '3.4'
 
 # 内部网络，提供gitlab和gitlab-runner使用
 # 可定义aliases，使用内部网络的服务器，可直接通过aliases访问到对应主机，不需要使用links
+# link: http://andrewtarry.com/docker_compose/
 networks:
   gitlab-network:
     driver: bridge
