@@ -1,0 +1,8 @@
+
+stages:
+  - setup
+  - test
+
+test-echo:
+  stage: setup
+  script: "echo asfsffsdsfsdfsdfdsf"
