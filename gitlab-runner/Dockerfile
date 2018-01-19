@@ -41,6 +41,6 @@ COPY ./entrypoint.sh /usr/bin/
 
 RUN chmod 755 /usr/bin/entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/sbin/init", "entrypoint.sh"]
 
 CMD [""]
