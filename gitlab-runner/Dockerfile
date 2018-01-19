@@ -37,10 +37,10 @@ RUN systemctl enable named.service
 # ----------------------------------------end-------------------------------------------------
 
 # 把命令复制到bin目录下，让ENTRYPOINT可执行
-# COPY ./entrypoint.sh /usr/bin/
-# RUN chmod 755 /usr/bin/entrypoint.sh
+ADD ./entrypoint.sh /
+RUN chmod 755 /entrypoint.sh
 
 # 初始化服务，用于systemctl命令，解决权限问题
-ENTRYPOINT ["/usr/sbin/init", "systemctl start docker", "gitlab-runner run"]
+ENTRYPOINT ["/usr/sbin/init"]
 
-CMD [""]
+CMD ["/entrypoint.sh"]
