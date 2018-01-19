@@ -1,4 +1,9 @@
+# systemd 解决方案
+# > https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
+
 FROM centos:7
+
+ENV container=docker
 
 # gitlab-runner
 RUN curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | bash
@@ -13,7 +18,6 @@ RUN yum install -y docker-ce
 # ------------------------------------------start---------------------------------------------
 # ------------------------------解决在centos7 systemd 权限bug中---------------------------------
 # --------------------------------------------------------------------------------------------
-ENV container=docker
 
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
 rm -f /lib/systemd/system/multi-user.target.wants/*;\
@@ -35,6 +39,3 @@ RUN systemctl enable named.service
 # ENTRYPOINT systemctl start docker
 
 CMD /usr/sbin/init
-
-# systemd 解决方案
-# > https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
