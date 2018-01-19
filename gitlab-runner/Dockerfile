@@ -13,4 +13,6 @@ RUN	yum-config-manager --enable docker-ce-edge
 
 RUN yum install -y docker-ce
 
+RUN yum -y install initscripts && yum clean all
+
 # CMD systemctl start docker && /bin/bash
