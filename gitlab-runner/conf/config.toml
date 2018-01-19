@@ -14,3 +14,10 @@ check_interval = 0
   token = "a30f5a6dba9a4656a378f7d43d4f26"
   executor = "shell"
   [runners.cache]
+
+[[runners]]
+  name = "button"
+  url = "http://gitlab:5000"
+  token = "350815c47997604518dcdc71a96bf0"
+  executor = "shell"
+  [runners.cache]
