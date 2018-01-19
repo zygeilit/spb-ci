@@ -43,4 +43,4 @@ RUN chmod 755 /usr/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD[""]
+CMD [""]
