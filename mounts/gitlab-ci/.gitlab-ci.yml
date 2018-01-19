@@ -1,26 +1,55 @@
 # documents: 
 # 1. https://ithelp.ithome.com.tw/articles/10187654
 # 2. https://blog.m31271n.com/2017/08/22/%E9%80%9A%E8%BF%87-GitLab-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84-CI-CD-Pipeline/
+# 3. https://docs.gitlab.com/ee/ci/pipelines.html
+# 4. https://docs.gitlab.com/ee/ci/triggers/README.html#ci-job-token
+# 5. https://docs.gitlab.com/ce/ci/
+
+# 所有 jobs 的执行环境
+image:
+  name: ruby:2.2
+  entrypoint: ["/bin/bash"]
+
+# 可配置services，与Dokcer.service一致
+services:
+    # 镜像名
+  - name: my-postgres:9.4
+
+    # 别名，服务器见可以通过别名关联，Dokcer.links
+    alias: db-postgres
+
+    # It will be translated to Docker's --entrypoint option while creating the container
+    # 可重写Docker容器的默认行为
+    entrypoint: ["/usr/local/bin/db-postgres"]
+
+    # It will be translated to arguments passed to Docker after the image's name
+    # 用于启动服务，比如：job需要sql数据库，但需要手动启动服务，这里就可以使用command启动服务
+    # command: ["/usr/bin/super-sql", "run"]
+    command: ["start"]
+
 
 # stages 预定义 Gitlab-CI 的三个阶段
-# 一個 stages 可以定義一個或多個 job
+# 一个 stages 可以定义一个或多个 job
 stages:
   - build # 编辑阶段
   - test # 测试阶段
-  - deploy # 部署阶段
-  # - release
-  # - docker
+  - staging # 部署阶段
+  # - production # 部署阶段
 
 build_job:
   stage: build
 
-  # 不确实是否需要此 image 和用处
-  # job 都是在 Docker 上执行的，因此一开始会需要设定 image ，而它将会成为下面执行 job 的环境
-  image: centos:6
+  # 可定义具体的job的执行环境
+  image: node:8.4.0-alpine
+  # 可配置service，与Docker.service相同
+  services: 
+    - postgres:9.3
+  # 可配置
+  command: ["start"]
 
   # job 实际执行的脚本
   script:
-    - composer install
+    - node -v
 
   # 快找，下次启动同一个 job 的时会再使用
   cache:
@@ -31,13 +60,10 @@ build_job:
     paths:
       - vendor/
 
-  dependencies:
-    - setup
-
 test_job:
   stage: test
   script:
-    - php vendor/bin/codecept run
+    - echo test_job:123456
 
   # 这个测试要取用 build_job 的 artifacts
   # 每个 job 都是独立的 container ，互不相关，因此要靠这些设定來传递 Artifacts
@@ -45,7 +71,7 @@ test_job:
     - build_job
 
 deploy_job:
-  stage: deploy
+  stage: staging
   script:
     - echo Deploy OK
 
