@@ -65,7 +65,7 @@ Jenkins: http://localhost:5002
 服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
 
 
-使用spb-ci搭建的线上服务
+spb-ci搭建的线上服务
 -----------
 
 使用了阿里云的云服务器，网站正在备案中 [www.zygci.com](http://39.104.66.206:5000)
