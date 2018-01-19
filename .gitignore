@@ -4,3 +4,4 @@
 /mongodb/conf/*
 
 /node_modules
+/gitlab-runner/conf/config.toml

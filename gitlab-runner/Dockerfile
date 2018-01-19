@@ -38,4 +38,5 @@ RUN systemctl enable named.service
 
 # ENTRYPOINT systemctl start docker
 
-CMD /usr/sbin/init
+CMD /usr/sbin/init && \
+	gitlab-runner run
