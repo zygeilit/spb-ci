@@ -36,6 +36,11 @@ RUN systemctl enable named.service
 # ------------------------------解决在centos7 systemd 权限bug中---------------------------------
 # ----------------------------------------end-------------------------------------------------
 
+# 把命令复制到bin目录下，让ENTRYPOINT可执行
+COPY ./entrypoint.sh /usr/bin/
+
+RUN chmod 755 /usr/bin/entrypoint.sh
+
 ENTRYPOINT ["entrypoint.sh"]
 
 CMD[""]
