@@ -22,11 +22,7 @@ git clone git@github.com:zygeilit/spb-ci.git
 docker-compose up --build -d
 ```
 
-等待服务器启动后，需要在Gitlab中创建Persion Token，复制到项目/mounts/gitlab-private-token中
-```
-```
-
-执行init命令，配置Jenkins和Gitlab的权限和SSH
+等待服务器启动后，需要在Gitlab中创建Persion Token，复制到项目/mounts/gitlab-private-token中, 调用init命令配置Jenkins和Gitlab的权限和SSH
 ```
 ./init.sh
 ```
