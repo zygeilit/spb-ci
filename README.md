@@ -70,3 +70,7 @@ gitlab-runner自动注册方案：
 
 centos7镜像权限BUG解决方案：
 > https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
+
+API注册Jenkins.Credentials方案
+> http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
+
