@@ -70,7 +70,7 @@ gitlab-runner自动注册方案：
 > https://docs.gitlab.com/ce/ci/docker/using_docker_build.html
 
 gitlab-ci搭建方案
-> https://blog.m31271n.com/2017/08/22/%E9%80%9A%E8%BF%87-GitLab-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84-CI-CD-Pipeline/
+> https://blog.m31271n.com/2017/08/22/通过-GitLab-构建自己的-CI-CD-Pipeline/
 
 centos7镜像权限BUG解决方案：
 > https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
