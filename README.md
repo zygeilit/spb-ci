@@ -65,5 +65,5 @@ Jenkins服务器端口: 5002
 文档
 -----------
 
-1. gitlab-runner自动注册方案：
+gitlab-runner自动注册方案：
 > https://github.com/ayufan/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md
