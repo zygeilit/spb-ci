@@ -62,27 +62,3 @@ Gitlab 服务器端口: 5000
 Jenkins服务器端口: 5002
 最高权限账号均为: root:12345678
 ```
-文档
------------
-
-gitlab-runner自动注册方案：
-> https://github.com/ayufan/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md
-> https://docs.gitlab.com/ce/ci/docker/using_docker_build.html
-
-gitlab-ci搭建方案
-> https://blog.m31271n.com/2017/08/22/通过-GitLab-构建自己的-CI-CD-Pipeline/
-> https://ithelp.ithome.com.tw/articles/10187654
-> https://docs.gitlab.com/ee/ci/pipelines.html
-> https://docs.gitlab.com/ee/ci/triggers/README.html#ci-job-token
-> https://docs.gitlab.com/ce/ci/
-
-centos7镜像权限BUG解决方案：
-> https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
-
-API注册Jenkins.Credentials方案
-> http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
-
-API获取Jenkins.crumb_token方案
-> https://support.cloudbees.com/hc/en-us/articles/219257077-CSRF-Protection-Explained
-
-
