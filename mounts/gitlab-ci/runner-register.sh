@@ -4,7 +4,7 @@ gitlab-runner register \
 	# 开启非交互式注册
 	--non-interactive \
 	--url "http://www.zygci.cn:5000" \
-	--registration-token "MFxQG6tyJx5W9zZNPGQz" \
+	--registration-token "dQhPVmC2PRauvxR_ECgc" \
 
 	# 使用docker容器执行jobs
 	--executor "docker" \
@@ -21,5 +21,5 @@ gitlab-runner register \
 	# 社区中贡献的源代码中发现
 	--docker-disable-cache=true \
 
-	--name "ad2f48d3918e" \
-  --tag-list "test12,3,4,5,5"
+	--name "Shared Gitlab Runner Token" \
+  --tag-list "Shared Token"
