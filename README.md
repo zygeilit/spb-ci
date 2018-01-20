@@ -44,11 +44,6 @@ docker-compose up --build -d
 
 计划和任务的拆分，可见 [Projects](https://github.com/zygeilit/spb-ci/projects/2)
 
-服务器配置
------------
-
-服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
-
 不足
 -----------
 
@@ -67,4 +62,8 @@ Gitlab 服务器端口: 5000
 Jenkins服务器端口: 5002
 最高权限账号均为: root:12345678
 ```
+文档
+-----------
 
+1. gitlab-runner自动注册方案：
+> https://github.com/ayufan/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md
