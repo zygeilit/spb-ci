@@ -22,12 +22,12 @@ git clone git@github.com:zygeilit/spb-ci.git
 docker-compose up --build -d
 ```
 
-创建并复制Gitlab的Persion Token到/mounts/gitlab-private-token, 接着执行 ./init.sh
+创建并复制Gitlab的Persion Token到/mounts/gitlab-private-token, 执行./init.sh
 ```
 ./init.sh
 ```
 
-使用Gitlab的Runner Shared Token替换/var/mounts/gitlab-ci/runner-register.sh中的 **--registration-token**，接着执行以下命令
+使用Gitlab的Runner Shared Token替换/var/mounts/gitlab-ci/runner-register.sh中的 **--registration-token**，执行以下命令
 ```
 docker exec -d gitlab-runner systemctl start dokcer
 docker exec -d gitlab-runner gitlab-runner run
