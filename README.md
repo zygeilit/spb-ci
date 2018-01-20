@@ -67,10 +67,18 @@ Jenkins服务器端口: 5002
 
 gitlab-runner自动注册方案：
 > https://github.com/ayufan/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md
+> https://docs.gitlab.com/ce/ci/docker/using_docker_build.html
+
+gitlab-ci搭建方案
+> https://blog.m31271n.com/2017/08/22/%E9%80%9A%E8%BF%87-GitLab-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84-CI-CD-Pipeline/
 
 centos7镜像权限BUG解决方案：
 > https://forums.docker.com/t/any-simple-and-safe-way-to-start-services-on-centos7-systemd/5695/8
 
 API注册Jenkins.Credentials方案
 > http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
+
+API获取Jenkins.crumb_token方案
+> https://support.cloudbees.com/hc/en-us/articles/219257077-CSRF-Protection-Explained
+
 
