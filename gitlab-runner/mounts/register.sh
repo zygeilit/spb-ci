@@ -1,3 +1,5 @@
+# config配置 
+# 1. >https://github.com/ayufan/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md
 
 # 注册runner使用，需要添加对应的job的token
 

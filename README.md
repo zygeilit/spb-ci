@@ -49,6 +49,12 @@ docker-compose up --build -d
 
 服务器的细节配置，可查看项目中 Dockerfile 和 docker-compose.yml
 
+不足
+-----------
+
+* Gitlab-runner服务器使用centos7服务器（权限BUG），目前无法自动启动docker服务和runner服务，需要手动开启
+* gitlab-runner register自动创建还未实现，需要手动注册
+* Giltab和Jenkins服务器之间的SSH配置还未实现自动化，需要启动服务后，调用./init.sh脚本
 
 spb-ci搭建的线上服务
 -----------
