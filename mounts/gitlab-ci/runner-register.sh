@@ -13,6 +13,8 @@ gitlab-runner register \
 	# 使用host机网络，主要是需要使用在host机子上的www.zygci.cn的域名
 	# 该域名是通过外部使用docker-compose创建的私有网络和gitlab服务器连接起来的
 	--docker-network-mode=host \
+
+	# 非Tag提交也会触发pipline.jobs
 	--run-untagged=true \
 
 	# 要想使用host机的网络，这里的disable-cache必须是true
