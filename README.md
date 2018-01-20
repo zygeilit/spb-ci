@@ -27,6 +27,13 @@ docker-compose up --build -d
 ./init.sh
 ```
 
+spb-ci集成了Gitlab Runner服务，要使用Gitlab Runner还需执行以下命令
+```
+docker exec -d gitlab-runner systemctl start dokcer
+docker exec -d gitlab-runner gitlab-runner run
+docker exec -d gitlab-runner /var/external_common_mounts/giltab-ci/runner-register.sh
+```
+
 先决条件
 -----------
 
