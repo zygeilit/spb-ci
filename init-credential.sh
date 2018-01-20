@@ -7,7 +7,7 @@ docker exec jenkins /var/external-mounts/add-credential-with-ssh-key.sh
 docker exec jenkins /var/external-mounts/add-ssh-key-to-gitlab.sh
 
 # 启动docker服务
-docker exec -d gitlab-runner systemctl start dokcer
+# docker exec -d gitlab-runner systemctl start dokcer
 
 # 启动giltab-runner 开始监听构建服务
-docker exec -d gitlab-runner gitlab-runner run
+# docker exec -d gitlab-runner gitlab-runner run
