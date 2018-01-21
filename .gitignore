@@ -1,7 +1,6 @@
-
 /gitlab/conf/*
 /jenkins/conf/*
 /mongodb/conf/*
+/gitlab-runner/conf/*
 
 /node_modules
-/gitlab-runner/conf/config.toml

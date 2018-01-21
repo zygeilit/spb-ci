@@ -29,9 +29,11 @@ docker-compose up --build -d
 
 使用Gitlab的Runner Shared Token替换/var/mounts/gitlab-ci/runner-register.sh中的 **--registration-token**
 ```
-docker exec -d gitlab-runner systemctl start dokcer
-docker exec -d gitlab-runner gitlab-runner run
-docker exec -d gitlab-runner /var/external_common_mounts/giltab-ci/runner-register.sh
+docker exec -d gitlab-runner bash
+
+~/ systemctl start dokcer
+~/ /var/external-common-mounts/gitlab-ci/runner-register.sh
+~/ gitlab-runner run
 ```
 
 先决条件
@@ -58,7 +60,13 @@ docker exec -d gitlab-runner /var/external_common_mounts/giltab-ci/runner-regist
 * gitlab-runner register自动创建还未实现，需要手动注册
 * Giltab和Jenkins服务器之间的SSH配置还未实现自动化，需要启动服务后，调用./init.sh脚本
 
-spb-ci搭建的线上服务
+BUG
+-----------
+
+Gitlab Runner 执行 Pipeline 任务出错：
+> ERROR: Job failed (system failure): Error response from daemon: error creating aufs mount to /var/lib/docker/aufs/mnt/(.*?)-init: invalid argument
+
+线上服务
 -----------
 
 使用了阿里云的云服务器，网站正在备案中 [www.zygci.com](http://39.104.66.206:5000)
