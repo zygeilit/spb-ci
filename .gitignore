@@ -1,6 +1,9 @@
-/gitlab/conf/*
-/jenkins/conf/*
-/mongodb/conf/*
-/gitlab-runner/conf/*
+
+/services/docs/conf/*
+/services/gitlab/conf/*
+/services/gitlab-runner/conf/*
+/services/jenkins/conf/*
+/services/mongodb/conf/*
+/services/webhooks/conf/*
 
 /node_modules

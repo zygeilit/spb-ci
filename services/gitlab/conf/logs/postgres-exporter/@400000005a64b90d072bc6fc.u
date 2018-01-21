@@ -1,4 +1,0 @@
-2018-01-21_15:20:29.31554 time="2018-01-21T15:20:29Z" level=info msg="Error opening connection to database (user=gitlab-psql%20host=/var/opt/gitlab/postgresql%20database=postgres%20sslmode=allow): dial unix /var/opt/gitlab/postgresql/.s.PGSQL.5432: connect: no such file or directory" source="postgres_exporter.go:1012"
-2018-01-21_15:20:29.31603 time="2018-01-21T15:20:29Z" level=info msg="Starting Server: localhost:9187" source="postgres_exporter.go:1114"
-2018-01-21_15:20:36.86749 time="2018-01-21T15:20:36Z" level=info msg="Established new database connection." source="postgres_exporter.go:986"
-2018-01-21_15:20:36.91420 time="2018-01-21T15:20:36Z" level=info msg="Semantic Version Changed: 0.0.0 -> 9.6.5" source="postgres_exporter.go:919"

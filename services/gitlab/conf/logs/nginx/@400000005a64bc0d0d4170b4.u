@@ -1,1 +1,0 @@
-2018-01-21_16:09:10.34664 2018/01/21 16:09:10 [alert] 507#0: unlink() "/var/opt/gitlab/nginx/nginx.pid" failed (2: No such file or directory)
