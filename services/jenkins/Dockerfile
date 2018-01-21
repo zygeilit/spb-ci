@@ -1,4 +1,3 @@
-
 FROM jenkins/jenkins:lts
 
 ARG jenkins_home_path

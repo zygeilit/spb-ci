@@ -1,0 +1,10 @@
+
+/services/docs/conf/*
+/services/gitlab/conf/*
+/services/gitlab-runner/conf/*
+/services/jenkins/conf/*
+/services/mongodb/conf/*
+/services/webhooks/conf/*
+
+/node_modules
+/mounts/doc-web-server/node_modules
