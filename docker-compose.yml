@@ -41,11 +41,10 @@ services:
         aliases:
           - $gitlab_host_name
     volumes:
-      - ./mounts:$external_common_mounts_path
-      - ./gitlab/mounts:$external_mounts_path
       - ./gitlab/conf/config:/etc/gitlab
       - ./gitlab/conf/logs:/var/log/gitlab
       - ./gitlab/conf/data:/var/opt/gitlab
+      - ./mounts:$external_common_mounts_path
 
   gitlab-runner:
     restart: always
