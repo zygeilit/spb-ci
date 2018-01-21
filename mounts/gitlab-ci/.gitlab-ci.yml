@@ -24,7 +24,6 @@ services:
   # command: ["/usr/bin/super-sql", "run"]
   command: ["start"]
 
-
 # stages 预定义 Gitlab-CI 的三个阶段
 # 一个 stages 可以定义一个或多个 job
 stages:

@@ -9,7 +9,6 @@
 # 要想使用host机的网络，这里的disable-cache必须是true
 # 社区中贡献的源代码中发现
 
-
 gitlab-runner register \
 	--non-interactive \
 	--url "http://www.gitlab.cn:5000" \
@@ -20,4 +19,4 @@ gitlab-runner register \
 	--run-untagged=true \
 	--docker-disable-cache=true \
 	--name "Shared Gitlab Runner Token" \
-  --tag-list "Shared Token"
+  	--tag-list "Shared Token"
