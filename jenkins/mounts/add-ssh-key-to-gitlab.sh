@@ -18,4 +18,4 @@ EOF`
 # https://docs.gitlab.com/ce/api/users.html#add-ssh-key
 # 添加ssh-key，使用Private token，post请求
 # 使用root用户添加ssh-key，root用户的 ID 是 1：可使用users api 查看id
-curl -H "PRIVATE-TOKEN: $GITLAB_PRIVATE_TOKEN" -H "Content-Type: application/json" -d "$DATA" -XPOST http://gitlab:$gitlab_port/api/v4/users/$USERID/keys
+curl -H "PRIVATE-TOKEN: $GITLAB_PRIVATE_TOKEN" -H "Content-Type: application/json" -d "$DATA" -XPOST http://$gitlab_host_name:$gitlab_port/api/v4/users/$USERID/keys

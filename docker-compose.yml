@@ -1,3 +1,4 @@
+
 version: '3.4'
 
 # 内部网络，提供gitlab和gitlab-runner使用
@@ -8,6 +9,15 @@ networks:
     driver: bridge
 
 services:
+  mongodb:
+    restart: always
+    image: mongo
+    container_name: mongodb
+    volumes:
+      - ./mongodb/conf:/data/db
+    stdin_open: true
+    tty: true
+
   gitlab:
     restart: always
     image: gitlab/gitlab-ce
@@ -44,15 +54,12 @@ services:
     # 安装docker，但，daemon无法启动过
     # image: gitlab/gitlab-runner
     container_name: gitlab-runner
-    links:
-      - gitlab
-      - jenkins
     depends_on:
       - gitlab
     networks:
       gitlab-network:
         aliases:
-          - www.gitlab-runner.com
+          - $gitlab_runner_host_name
     environment:
       - gitlab_host_name=$gitlab_host_name
     volumes:
@@ -69,21 +76,18 @@ services:
     build:
       context: ./jenkins
       args:
-        - external_mounts_path=$external_mounts_path
         - jenkins_home_path=$jenkins_home_path
     container_name: jenkins
-    expose:
-      - "8080"
+    networks:
+      gitlab-network:
+        aliases:
+          - $jenkins_host_name
     ports:
       - "$jenkins_port:8080"
-    links:
-      - doc-server
-    depends_on:
-      - gitlab
     volumes:
+      - ./jenkins/conf:/var/jenkins_home
       - ./mounts:$external_common_mounts_path
       - ./jenkins/mounts:$external_mounts_path
-      - ./jenkins/conf:/var/jenkins_home
     environment:
       - jenkins_user=$jenkins_user
       - jenkins_pass=$jenkins_pass
@@ -93,30 +97,25 @@ services:
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
       - gitlab_port=$gitlab_port
       - jenkins_executer_folder_name=$jenkins_executer_folder_name
+      - gitlab_host_name=$gitlab_host_name
     stdin_open: true
     tty: true
 
-  mongodb:
-    restart: always
-    image: mongo
-    container_name: mongodb
-    links:
-      - gitlab:gitlab
+  webhooks:
+    build: ./webhooks
+    container_name: webhooks
+    ports:
+      - "$webhooks_port:3000"
     volumes:
-      - ./mongodb/conf:/data/db
-      - ./mongodb/mounts:$external_mounts_path
+      - ./mounts:$external_common_mounts_path
     stdin_open: true
     tty: true
 
-  doc-server:
-    build: ./doc-server
-    container_name: doc-server
+  docs:
+    build: ./docs
+    container_name: docs
     ports:
       - "$doc_server_port:3000"
-    links:
-      - mongodb
-    depends_on:
-      - mongodb
     volumes:
       - ./mounts:$external_common_mounts_path
     environment:

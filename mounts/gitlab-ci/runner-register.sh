@@ -12,8 +12,8 @@
 
 gitlab-runner register \
 	--non-interactive \
-	--url "http://www.zygci.cn:5000" \
-	--registration-token "dQhPVmC2PRauvxR_ECgc" \
+	--url "http://www.gitlab.cn:5000" \
+	--registration-token "uuyVjXnMzP5oMjZSxKVu" \
 	--executor "docker" \
 	--docker-image "docker:latest" \
 	--docker-network-mode=host \

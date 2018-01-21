@@ -44,7 +44,7 @@ RUN systemctl enable named.service
 # ENTRYPOINT systemctl start docker
 
 # 提取Gitlab Runner Token时使用
-RUN yum install -y jq
+# RUN yum install -y jq
 
 # 需要使用 /usr/sbin/init 启动，然后开启docker 和启动gitlab-runner
 CMD ["/usr/sbin/init"]
