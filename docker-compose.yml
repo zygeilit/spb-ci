@@ -108,26 +108,6 @@ services:
     stdin_open: true
     tty: true
 
-  mongodb-interface:
-    restart: always
-    image: mongo-express
-    container_name: mongodb-interface
-    ports:
-      - "$mongodb_interface_port:8081"
-    links:
-      - mongodb:mongo
-    depends_on:
-      - mongodb
-    volumes:
-      - ./mongodb-interface/conf:/data/db
-      - ./mongodb-interface/mounts:$external_mounts_path
-    environment:
-      - ME_CONFIG_OPTIONS_EDITORTHEME=ambiance
-      - ME_CONFIG_BASICAUTH_USERNAME=$mongodb_interface_user
-      - ME_CONFIG_BASICAUTH_PASSWORD=$mongodb_interface_pass
-    stdin_open: true
-    tty: true
-
   doc-server:
     build: ./doc-server
     container_name: doc-server
