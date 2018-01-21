@@ -24,7 +24,7 @@ docker-compose up --build -d
 
 创建并复制Gitlab的Persion Token到/mounts/gitlab-private-token
 ```
-./init-credential.sh
+./cmd-init-credential.sh
 ```
 
 使用Gitlab的Runner Shared Token替换/var/mounts/gitlab-ci/runner-register.sh中的 **--registration-token**
