@@ -1,6 +1,5 @@
 #!/bin/sh
 # 配合 groogy 执行的配置
-exec 1>/tmp/test
 
 # 添加Jenkins服务器上生成的私钥，和Gitlab添加的.pub对应的Key
 HOST=http://localhost:8080
@@ -8,7 +7,7 @@ ACCOUNT=$jenkins_user:$jenkins_pass
 
 # 获取crumb token，用来使用jenkins remote api
 # > https://support.cloudbees.com/hc/en-us/articles/219257077-CSRF-Protection-Explained
-CRUMB=`curl -u "$ACCOUNT" '$HOST/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'`
+CRUMB=`curl -u "$ACCOUNT" $HOST'/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'`
 
 # grep [^-]$: 获取行结尾不是-的内容，抓取私钥内容
 # tr -d '\n': 删除换行符号
