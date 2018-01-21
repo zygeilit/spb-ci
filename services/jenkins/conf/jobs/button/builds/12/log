@@ -1,0 +1,28 @@
+Started by user [8mha:////4CvYH+c/CbmZ2nBbXPT0w5JIc+S/i0LTH5IgBcBEzQZgAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Building in workspace /var/jenkins_home/workspace/button
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://root@gitlab:30080/components/button.git # timeout=10
+Fetching upstream changes from http://root@gitlab:30080/components/button.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress http://root@gitlab:30080/components/button.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d5b240ed79b7c5e6785932e8f652077f0f848a05 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d5b240ed79b7c5e6785932e8f652077f0f848a05
+Commit message: "Add readme.md"
+ > git rev-list --no-walk d5b240ed79b7c5e6785932e8f652077f0f848a05 # timeout=10
+[button] $ /bin/sh -xe /tmp/jenkins7663281874650855612.sh
++ cd /var/external-common-mounts/spb-builder/
++ chmod 755 extract-doc.sh
++ pwd
++ ./extract-doc.sh /var/external-common-mounts/spb-builder
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0/usr/bin/python: Import by filename is not supported.
+100   491  100   491    0     0  18807      0 --:--:-- --:--:-- --:--:-- 19640
+(23) Failed writing body
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

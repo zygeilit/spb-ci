@@ -1,0 +1,8 @@
+2018-01-21_15:59:56.06581 time="2018-01-21T15:59:56Z" level=info msg="Redis Metrics Exporter <<< filled in by build >>>    build date: <<< filled in by build >>>    sha1: <<< filled in by build >>>    Go: go1.8.1" 
+2018-01-21_15:59:56.06619 time="2018-01-21T15:59:56Z" level=info msg="Providing metrics at localhost:9121/metrics" 
+2018-01-21_15:59:56.06638 time="2018-01-21T15:59:56Z" level=info msg="Connecting to redis hosts: []string{\"unix:///var/opt/gitlab/redis/redis.socket\"}" 
+2018-01-21_15:59:56.06659 time="2018-01-21T15:59:56Z" level=info msg="Using alias: []string{\"\"}" 
+2018-01-21_16:08:11.77315 time="2018-01-21T16:08:11Z" level=info msg="redis err: dial unix /var/opt/gitlab/redis/redis.socket: connect: no such file or directory" 
+2018-01-21_16:08:26.77070 time="2018-01-21T16:08:26Z" level=info msg="redis err: dial unix /var/opt/gitlab/redis/redis.socket: connect: no such file or directory" 
+2018-01-21_16:08:41.76993 time="2018-01-21T16:08:41Z" level=info msg="redis err: dial unix /var/opt/gitlab/redis/redis.socket: connect: no such file or directory" 
+2018-01-21_16:08:56.77114 time="2018-01-21T16:08:56Z" level=info msg="redis err: dial unix /var/opt/gitlab/redis/redis.socket: connect: no such file or directory" 

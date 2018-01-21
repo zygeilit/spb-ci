@@ -13,7 +13,7 @@ services:
     image: mongo
     container_name: mongodb
     volumes:
-      - ./mongodb/conf:/data/db
+      - ./services/mongodb/conf:/data/db
     stdin_open: true
     tty: true
 
@@ -40,15 +40,15 @@ services:
         aliases:
           - $gitlab_host_name
     volumes:
-      - ./gitlab/conf/config:/etc/gitlab
-      - ./gitlab/conf/logs:/var/log/gitlab
-      - ./gitlab/conf/data:/var/opt/gitlab
+      - ./services/gitlab/conf/config:/etc/gitlab
+      - ./services/gitlab/conf/logs:/var/log/gitlab
+      - ./services/gitlab/conf/data:/var/opt/gitlab
       - ./mounts:$external_common_mounts_path
 
   gitlab-runner:
     restart: always
     build: 
-      context: ./gitlab-runner
+      context: ./services/gitlab-runner
     # 安装docker，但，daemon无法启动过
     # image: gitlab/gitlab-runner
     container_name: gitlab-runner
@@ -62,8 +62,8 @@ services:
       - gitlab_host_name=$gitlab_host_name
     volumes:
       - ./mounts:$external_common_mounts_path
-      - ./gitlab-runner/conf:/etc/gitlab-runner
-      - ./gitlab-runner/conf/docker.sock:/var/run/docker.sock
+      - ./services/gitlab-runner/conf:/etc/gitlab-runner
+      - ./services/gitlab-runner/conf/docker.sock:/var/run/docker.sock
     stdin_open: true
     tty: true
     # 提权，不然使用 systemctl 命令会报错
@@ -72,7 +72,7 @@ services:
   jenkins:
     restart: always
     build:
-      context: ./jenkins
+      context: ./services/jenkins
       args:
         - jenkins_home_path=$jenkins_home_path
     container_name: jenkins
@@ -83,22 +83,23 @@ services:
     ports:
       - "$jenkins_port:8080"
     volumes:
-      - ./jenkins/conf:/var/jenkins_home
+      - ./services/jenkins/conf:/var/jenkins_home
       - ./mounts:$external_common_mounts_path
     environment:
+      - external_common_mounts_path=$external_common_mounts_path
       - jenkins_user=$jenkins_user
       - jenkins_pass=$jenkins_pass
       - jenkins_home_path=$jenkins_home_path
-      - external_common_mounts_path=$external_common_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
-      - gitlab_port=$gitlab_port
       - jenkins_executer_folder_name=$jenkins_executer_folder_name
+      - gitlab_port=$gitlab_port
       - gitlab_host_name=$gitlab_host_name
     stdin_open: true
     tty: true
 
   webhooks:
-    build: ./webhooks
+    build:
+      context: ./services/webhooks
     container_name: webhooks
     ports:
       - "$webhooks_port:3000"
@@ -108,7 +109,8 @@ services:
     tty: true
 
   docs:
-    build: ./docs
+    build:
+      context: ./services/docs
     container_name: docs
     ports:
       - "$doc_server_port:3000"

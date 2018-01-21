@@ -1,0 +1,65 @@
+2018-01-21_15:20:29.30667                 _._                                                  
+2018-01-21_15:20:29.30700            _.-``__ ''-._                                             
+2018-01-21_15:20:29.30740       _.-``    `.  `_.  ''-._           Redis 3.2.11 (00000000/0) 64 bit
+2018-01-21_15:20:29.30779   .-`` .-```.  ```\/    _.,_ ''-._                                   
+2018-01-21_15:20:29.30815  (    '      ,       .-`  | `,    )     Running in standalone mode
+2018-01-21_15:20:29.30829  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 0
+2018-01-21_15:20:29.30849  |    `-._   `._    /     _.-'    |     PID: 419
+2018-01-21_15:20:29.30875   `-._    `-._  `-./  _.-'    _.-'                                   
+2018-01-21_15:20:29.30891  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2018-01-21_15:20:29.30926  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+2018-01-21_15:20:29.30940   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2018-01-21_15:20:29.30966  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2018-01-21_15:20:29.30994  |    `-._`-._        _.-'_.-'    |                                  
+2018-01-21_15:20:29.31016   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2018-01-21_15:20:29.31051       `-._    `-.__.-'    _.-'                                       
+2018-01-21_15:20:29.31069           `-._        _.-'                                           
+2018-01-21_15:20:29.31094               `-.__.-'                                               
+2018-01-21_15:20:29.31112 
+2018-01-21_15:20:29.31170 419:M 21 Jan 15:20:29.306 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2018-01-21_15:20:29.31191 419:M 21 Jan 15:20:29.307 # Server started, Redis version 3.2.11
+2018-01-21_15:20:29.31226 419:M 21 Jan 15:20:29.307 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+2018-01-21_15:20:29.35311 419:M 21 Jan 15:20:29.353 * DB loaded from disk: 0.046 seconds
+2018-01-21_15:20:29.35359 419:M 21 Jan 15:20:29.353 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2018-01-21_15:25:30.03771 419:M 21 Jan 15:25:30.033 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:25:30.03931 419:M 21 Jan 15:25:30.038 * Background saving started by pid 1407
+2018-01-21_15:25:30.05614 1407:C 21 Jan 15:25:30.055 * DB saved on disk
+2018-01-21_15:25:30.05762 1407:C 21 Jan 15:25:30.056 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:25:30.13943 419:M 21 Jan 15:25:30.139 * Background saving terminated with success
+2018-01-21_15:30:31.06185 419:M 21 Jan 15:30:31.061 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:30:31.06433 419:M 21 Jan 15:30:31.064 * Background saving started by pid 2228
+2018-01-21_15:30:31.08064 2228:C 21 Jan 15:30:31.080 * DB saved on disk
+2018-01-21_15:30:31.08171 2228:C 21 Jan 15:30:31.081 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:30:31.16550 419:M 21 Jan 15:30:31.165 * Background saving terminated with success
+2018-01-21_15:35:32.09599 419:M 21 Jan 15:35:32.095 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:35:32.09733 419:M 21 Jan 15:35:32.097 * Background saving started by pid 3054
+2018-01-21_15:35:32.10346 3054:C 21 Jan 15:35:32.103 * DB saved on disk
+2018-01-21_15:35:32.10382 3054:C 21 Jan 15:35:32.103 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:35:32.20079 419:M 21 Jan 15:35:32.200 * Background saving terminated with success
+2018-01-21_15:40:33.04728 419:M 21 Jan 15:40:33.047 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:40:33.04859 419:M 21 Jan 15:40:33.048 * Background saving started by pid 3702
+2018-01-21_15:40:33.05804 3702:C 21 Jan 15:40:33.057 * DB saved on disk
+2018-01-21_15:40:33.05845 3702:C 21 Jan 15:40:33.058 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:40:33.14931 419:M 21 Jan 15:40:33.149 * Background saving terminated with success
+2018-01-21_15:45:34.06371 419:M 21 Jan 15:45:34.063 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:45:34.06466 419:M 21 Jan 15:45:34.064 * Background saving started by pid 4403
+2018-01-21_15:45:34.07099 4403:C 21 Jan 15:45:34.070 * DB saved on disk
+2018-01-21_15:45:34.07137 4403:C 21 Jan 15:45:34.071 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:45:34.16531 419:M 21 Jan 15:45:34.165 * Background saving terminated with success
+2018-01-21_15:50:35.02849 419:M 21 Jan 15:50:35.028 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:50:35.02891 419:M 21 Jan 15:50:35.028 * Background saving started by pid 5079
+2018-01-21_15:50:35.04805 5079:C 21 Jan 15:50:35.047 * DB saved on disk
+2018-01-21_15:50:35.04880 5079:C 21 Jan 15:50:35.048 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:50:35.12933 419:M 21 Jan 15:50:35.129 * Background saving terminated with success
+2018-01-21_15:55:36.09416 419:M 21 Jan 15:55:36.094 * 10 changes in 300 seconds. Saving...
+2018-01-21_15:55:36.09516 419:M 21 Jan 15:55:36.095 * Background saving started by pid 5740
+2018-01-21_15:55:36.10224 5740:C 21 Jan 15:55:36.102 * DB saved on disk
+2018-01-21_15:55:36.10267 5740:C 21 Jan 15:55:36.102 * RDB: 0 MB of memory used by copy-on-write
+2018-01-21_15:55:36.19560 419:M 21 Jan 15:55:36.195 * Background saving terminated with success
+2018-01-21_15:57:19.39361 419:signal-handler (1516550239) Received SIGTERM scheduling shutdown...
+2018-01-21_15:57:19.48100 419:M 21 Jan 15:57:19.480 # User requested shutdown...
+2018-01-21_15:57:19.48169 419:M 21 Jan 15:57:19.480 * Saving the final RDB snapshot before exiting.
+2018-01-21_15:57:19.49326 419:M 21 Jan 15:57:19.493 * DB saved on disk
+2018-01-21_15:57:19.49379 419:M 21 Jan 15:57:19.493 * Removing the pid file.
+2018-01-21_15:57:19.49581 419:M 21 Jan 15:57:19.495 * Removing the unix socket file.
+2018-01-21_15:57:19.49745 419:M 21 Jan 15:57:19.497 # Redis is now ready to exit, bye bye...

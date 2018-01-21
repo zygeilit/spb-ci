@@ -1,0 +1,24 @@
+Started by user [8mha:////4CvYH+c/CbmZ2nBbXPT0w5JIc+S/i0LTH5IgBcBEzQZgAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Building in workspace /var/jenkins_home/workspace/button
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://root@gitlab:30080/components/button.git # timeout=10
+Fetching upstream changes from http://root@gitlab:30080/components/button.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress http://root@gitlab:30080/components/button.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 730227c0a26184849b498713e3383f0f66e8baa0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 730227c0a26184849b498713e3383f0f66e8baa0
+Commit message: "Add new file"
+ > git rev-list --no-walk 730227c0a26184849b498713e3383f0f66e8baa0 # timeout=10
+[button] $ /bin/sh -xe /tmp/jenkins6395852050683138216.sh
++ /var/external-common-mounts/spb-builder/extract-doc.sh
+workspace: /var/jenkins_home/workspace/button
+total 4
+-rw-r--r-- 1 jenkins jenkins 6 Jan 15 18:35 README.md
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Finished: SUCCESS

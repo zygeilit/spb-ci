@@ -1,0 +1,337 @@
+2018-01-21_15:59:31.89684 LOG:  database system was shut down at 2018-01-21 15:57:18 GMT
+2018-01-21_15:59:31.90841 LOG:  MultiXact member wraparound protections are now enabled
+2018-01-21_15:59:31.91117 LOG:  database system is ready to accept connections
+2018-01-21_15:59:31.91226 LOG:  autovacuum launcher started
+2018-01-21_16:08:10.51010 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:11.21166 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:11.21194 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:11.91830 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:11.91863 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.04117 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.04160 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.62211 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.62239 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.74190 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:12.74217 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:13.31861 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:13.31880 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:13.45380 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:13.45404 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.02884 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.02906 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.15870 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.15899 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.73773 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.73797 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.87144 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:14.87175 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:15.44384 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:15.44415 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:15.57726 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:15.57753 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.15155 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.15180 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.28196 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.28219 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.85494 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.85527 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.98371 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.98394 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.98646 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:16.98668 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:17.55148 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:17.55170 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:17.68550 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:17.68576 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:18.26311 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:18.26373 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:18.42551 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:18.42604 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.03517 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.03581 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.17339 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.17373 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.75058 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.75081 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.88181 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:19.88207 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.45689 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.45714 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.59308 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.59328 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.71518 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:20.71542 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.16953 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.16973 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.30318 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.30342 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.60730 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:21.60758 STATEMENT:  SELECT * FROM pg_stat_database_conflicts;
+2018-01-21_16:08:21.60817 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.60843 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.60865 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.77927 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:21.77956 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.00248 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.00280 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.47770 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.47799 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.71238 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:22.71264 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.14855 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:23.14934 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.14955 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.18250 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.18283 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.84936 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.84967 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.88219 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:23.88244 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:24.54477 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:24.54518 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:24.57865 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:24.57911 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.25620 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.25639 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.29497 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.29518 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.96002 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.96025 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.99381 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:25.99404 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:26.66977 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:26.67000 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:26.70264 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:26.70290 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:27.37705 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:27.37784 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:27.41011 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:27.41039 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.08011 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.08029 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.11436 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.11467 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.84077 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.84152 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.87765 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:28.87835 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:29.57131 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:29.57152 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:29.60561 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:29.60584 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.29170 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.29200 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.32648 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.32683 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.98790 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:30.98819 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.03285 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.03312 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.70760 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.70793 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.75195 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.75252 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.82287 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.82321 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.98701 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:31.98725 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.41460 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.41492 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.45963 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.45988 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.90278 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:32.90308 STATEMENT:  SELECT * FROM pg_stat_bgwriter;
+2018-01-21_16:08:32.90384 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.90421 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.90634 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:32.90659 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.12361 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.12404 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.60602 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.60630 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.82606 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:33.82629 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.26710 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:34.26865 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.26889 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.31296 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.31321 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.97178 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:34.97199 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.01678 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.01697 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.67548 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.67569 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.71868 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:35.71888 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:36.37851 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:36.37890 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:36.42230 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:36.42297 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.07991 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.08016 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.12332 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.12357 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.78157 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.78197 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.82583 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:37.82625 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:38.49135 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:38.49214 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:38.53755 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:38.54158 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:39.35937 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:39.35996 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:39.40561 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:39.40614 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.09793 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.09829 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.14197 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.14219 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.81532 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.81549 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.85741 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:40.85758 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:41.52076 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:41.52100 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:41.56533 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:41.56557 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.21945 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.21965 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.26354 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.26372 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.91857 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.91879 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.96322 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:42.96350 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:43.62373 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:43.62393 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:43.66821 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:43.66852 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.10672 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:44.10701 STATEMENT:  SELECT * FROM pg_stat_database;
+2018-01-21_16:08:44.10759 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.10795 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.10817 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.13318 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.13343 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.32511 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.32539 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.83734 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:44.83765 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:45.02073 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:45.02103 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:45.46544 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:45.54448 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:45.54473 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.25101 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.25135 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.95660 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.95711 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.98664 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:46.98693 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:47.66388 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:47.66416 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:48.36611 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:48.36646 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:49.07579 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:49.07617 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:49.82294 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:49.82354 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:50.54805 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:50.54832 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:51.26092 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:51.26112 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:51.97194 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:51.97223 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:52.67841 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:52.67864 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:53.38743 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:53.38763 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.08870 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.08899 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.32592 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.32612 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.79095 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:54.79117 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:55.23110 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:08:55.23136 STATEMENT:  SELECT * FROM pg_stat_database;
+2018-01-21_16:08:55.23189 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:55.23219 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:55.23234 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:55.33703 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:55.33725 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:56.04043 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:56.04067 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:56.75006 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:56.75035 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:57.45347 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:57.45373 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:58.16075 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:58.16106 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:58.86212 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:58.86235 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:59.59874 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:08:59.59955 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:00.34535 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:00.34557 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.04978 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.05006 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.76264 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.76286 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.98792 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:01.98889 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:02.46538 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:02.46571 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:03.16653 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:03.16678 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:03.86649 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:03.86671 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:04.56879 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:04.56896 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:05.27232 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:05.27261 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:05.97744 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:05.97770 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:06.42298 LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-21_16:09:06.42330 STATEMENT:  SELECT * FROM pg_stat_database_conflicts;
+2018-01-21_16:09:06.42397 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:06.42423 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:06.42466 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:06.42656 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:06.42675 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:07.13094 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:07.13121 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:07.84391 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:07.84428 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:08.52969 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:08.53000 LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-21_16:09:09.01501 LOG:  could not open file "postmaster.pid": No such file or directory
+2018-01-21_16:09:09.01533 LOG:  performing immediate shutdown because data directory lock file is invalid
+2018-01-21_16:09:09.01878 LOG:  received immediate shutdown request
+2018-01-21_16:09:09.01922 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.01949 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.01979 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.02037 LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2018-01-21_16:09:09.02061 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.02126 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.02155 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.02181 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.02201 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.02226 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.02351 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.02378 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.02423 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.02491 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.02562 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.02593 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.02654 WARNING:  terminating connection because of crash of another server process
+2018-01-21_16:09:09.02811 DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-21_16:09:09.02839 HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-21_16:09:09.08807 LOG:  database system is shut down
+2018-01-21_16:09:09.09956 postgres: could not access directory "/var/opt/gitlab/postgresql/data": No such file or directory
+2018-01-21_16:09:09.09987 Run initdb or pg_basebackup to initialize a PostgreSQL data directory.
+2018-01-21_16:09:10.10677 postgres: could not access directory "/var/opt/gitlab/postgresql/data": No such file or directory
+2018-01-21_16:09:10.10722 Run initdb or pg_basebackup to initialize a PostgreSQL data directory.
+2018-01-21_16:09:11.11448 postgres: could not access directory "/var/opt/gitlab/postgresql/data": No such file or directory
+2018-01-21_16:09:11.11541 Run initdb or pg_basebackup to initialize a PostgreSQL data directory.
