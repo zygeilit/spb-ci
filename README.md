@@ -31,9 +31,9 @@ docker-compose up --build -d
 ```
 docker exec -d gitlab-runner bash
 
- systemctl start dokcer
- /var/external-common-mounts/gitlab-ci/runner-register.sh
- gitlab-runner run
+~/gitlab-runner: systemctl start dokcer
+~/gitlab-runner: /var/external-common-mounts/gitlab-ci/runner-register.sh
+~/gitlab-runner: gitlab-runner run
 ```
 
 先决条件
