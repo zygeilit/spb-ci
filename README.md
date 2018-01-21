@@ -30,9 +30,10 @@ docker-compose up --build -d
 使用Gitlab的Runner Shared Token替换/var/mounts/gitlab-ci/runner-register.sh中的 **--registration-token**
 ```
 docker exec -d gitlab-runner bash
-systemctl start dokcer
-/var/external-common-mounts/gitlab-ci/runner-register.sh
-gitlab-runner run
+
+ systemctl start dokcer
+ /var/external-common-mounts/gitlab-ci/runner-register.sh
+ gitlab-runner run
 ```
 
 先决条件
