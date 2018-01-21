@@ -83,8 +83,8 @@ services:
     ports:
       - "$jenkins_port:8080"
     volumes:
-      - ./services/jenkins/conf:/var/jenkins_home
       - ./mounts:$external_common_mounts_path
+      - ./services/jenkins/conf:/var/jenkins_home
     environment:
       - external_common_mounts_path=$external_common_mounts_path
       - jenkins_user=$jenkins_user
