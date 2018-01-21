@@ -66,7 +66,7 @@ BUG
 Gitlab Runner 执行Pipeline任务出错：
 > ERROR: Job failed (system failure): Error response from daemon: error creating aufs mount to /var/lib/docker/aufs/mnt/(.*?)-init: invalid argument
 
-spb-ci搭建的线上服务
+线上服务
 -----------
 
 使用了阿里云的云服务器，网站正在备案中 [www.zygci.com](http://39.104.66.206:5000)
