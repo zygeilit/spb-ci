@@ -12,7 +12,7 @@
 gitlab-runner register \
 	--non-interactive \
 	--url "http://www.gitlab.cn:5000" \
-	--registration-token "uuyVjXnMzP5oMjZSxKVu" \
+	--registration-token "DVWZ3sTMqLcERXBUYEAM" \
 	--executor "docker" \
 	--docker-image "docker:latest" \
 	--docker-network-mode=host \
