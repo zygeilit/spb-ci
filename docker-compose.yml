@@ -1,4 +1,3 @@
-
 version: '3.4'
 
 # 内部网络，提供gitlab和gitlab-runner使用
@@ -86,12 +85,10 @@ services:
     volumes:
       - ./jenkins/conf:/var/jenkins_home
       - ./mounts:$external_common_mounts_path
-      - ./jenkins/mounts:$external_mounts_path
     environment:
       - jenkins_user=$jenkins_user
       - jenkins_pass=$jenkins_pass
       - jenkins_home_path=$jenkins_home_path
-      - external_mounts_path=$external_mounts_path
       - external_common_mounts_path=$external_common_mounts_path
       - jenkins_add_credential_filename=$jenkins_add_credential_filename
       - gitlab_port=$gitlab_port
@@ -118,9 +115,6 @@ services:
     volumes:
       - ./mounts:$external_common_mounts_path
     environment:
-      - external_mounts_path=$external_mounts_path
       - external_common_mounts_path=$external_common_mounts_path
     stdin_open: true
     tty: true
-
-
