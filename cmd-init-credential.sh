@@ -1,4 +1,3 @@
-
 # 进入jenkins服务器，添加credential
 docker exec jenkins /var/external-common-mounts/jenkins/add-credential-with-ssh-key.sh
 
