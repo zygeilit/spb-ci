@@ -60,6 +60,12 @@ docker exec -d gitlab-runner bash
 * gitlab-runner register自动创建还未实现，需要手动注册
 * Giltab和Jenkins服务器之间的SSH配置还未实现自动化，需要启动服务后，调用./init.sh脚本
 
+BUG
+-----------
+
+* Gitlab Runner 执行Pipeline任务出错：
+> error creating aufs mount to /var/lib/docker/aufs/mnt/(.*?)-init: invalid argument
+
 spb-ci搭建的线上服务
 -----------
 
