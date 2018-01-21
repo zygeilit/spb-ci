@@ -64,7 +64,7 @@ BUG
 -----------
 
 Gitlab Runner 执行Pipeline任务出错：
-> error creating aufs mount to /var/lib/docker/aufs/mnt/(.*?)-init: invalid argument
+> ERROR: Job failed (system failure): Error response from daemon: error creating aufs mount to /var/lib/docker/aufs/mnt/(.*?)-init: invalid argument
 
 spb-ci搭建的线上服务
 -----------
