@@ -1,0 +1,17 @@
+
+Avatar:
+	- constructor: 4
+	- lifecycle:
+  - events: 42:5
+  - template-prepare: 18 
+  - template: 21
+
+ActionQueue:
+	- constructor: 61
+	- lifecycle: 
+	  - willReceiveProps: 7
+	  - willUnmount: 1
+	  - didMount: 10
+	- events: 468:10
+	- template-prepare: 0
+	- template: 0
