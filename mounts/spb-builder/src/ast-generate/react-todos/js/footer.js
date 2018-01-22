@@ -21,6 +21,7 @@ var app = app || {};
 			}
 
 			var nowShowing = this.props.nowShowing;
+
 			return React.createElement('footer', {
 				className: "footer"
 			}, [

@@ -46,13 +46,6 @@ var app = app || {};
 			return {editText: this.props.todo.title};
 		},
 
-		/**
-		 * This is a completely optional performance enhancement that you can
-		 * implement on any React component. If you were to delete this method
-		 * the app would still work correctly (and still be very performant!), we
-		 * just use it as an example of how little code it takes to get an order
-		 * of magnitude performance improvement.
-		 */
 		shouldComponentUpdate: function (nextProps, nextState) {
 			return (
 				nextProps.todo !== this.props.todo ||
@@ -61,12 +54,6 @@ var app = app || {};
 			);
 		},
 
-		/**
-		 * Safely manipulate the DOM after updating the state when invoking
-		 * `this.props.onEdit()` in the `handleEdit` method above.
-		 * For more info refer to notes at https://facebook.github.io/react/docs/component-api.html#setstate
-		 * and https://facebook.github.io/react/docs/component-specs.html#updating-componentdidupdate
-		 */
 		componentDidUpdate: function (prevProps) {
 			if (!prevProps.editing && this.props.editing) {
 				var node = React.findDOMNode(this.refs.editField);
@@ -77,7 +64,10 @@ var app = app || {};
 
 		render: function () {
 			return React.createElement('li', {
-				className: classNames({ completed: this.props.todo.completed, editing: this.props.editing })
+				className: classNames({
+					completed: this.props.todo.completed,
+					editing: this.props.editing
+				})
 			}, [
 				React.createElement('div', {
 					className: "view"
