@@ -13,4 +13,6 @@ var ast = acorn.parse(jsDomeFileContent, {
   'plugins': { jsx: true }
 })
 
-console.log(JSON.stringify(ast))
+fs.writeFile(`${__dirname}/ast-demo-react-cmp.json`, JSON.stringify(ast, null, 2))
+
+console.log('ast json generated')

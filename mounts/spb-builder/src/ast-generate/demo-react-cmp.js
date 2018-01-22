@@ -1,4 +1,3 @@
-
 import React, { Component, PropTypes } from 'react';
 import{ BaseButton } from '@beisen/ethos';
 import { calculOffset, HASHHISTORY,deepClone } from '../utils/common';
@@ -289,7 +288,6 @@ export default class BS_Button extends Component {
 
         return JSON.parse('{' + params + '}');
     }
-
 
     //获取handler,当为confirmPop和showPanel的时候才判断条数
     _getActionHandler(buttonHandler) {
