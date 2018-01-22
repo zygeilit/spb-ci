@@ -1,8 +1,6 @@
 
 import React, { Component, PropTypes } from 'react';
-import{
-    BaseButton
-} from '@beisen/ethos';
+import{ BaseButton } from '@beisen/ethos';
 import { calculOffset, HASHHISTORY,deepClone } from '../utils/common';
 import * as urlApi from '../utils/urlApi';
 import buttonHandlerMap from './handlerMap';
@@ -24,7 +22,7 @@ export default class BS_Button extends Component {
     }
 
     //button click之后会将当前的button数据推到reducer的active button上
-    buttonClick (event,value,e) {
+    buttonClick (event, value, e) {
         if(localStorage.getItem('isDisable') || localStorage.getItem('buttonDropDown')) return;
         let isDropDown = (typeof value === 'boolean') ? false : true;
         localStorage.setItem('showIframePop','no');
