@@ -15,18 +15,19 @@ SSHKEY_PRIVATE_KEY=`cat $jenkins_home_path/.ssh/id_rsa | grep [^-]$ | tr -d '\n'
 
 # Jenkins > Credentials > (global) > Add Credentials
 # > http://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
-curl -X POST -u "$ACCOUNT" -H "$CRUMB" $HOST/credentials/store/system/domain/_/createCredentials --data-urlencode 'json={
-  "": "0",
-  "credentials": {
-    "scope": "GLOBAL",
-    "id": "gitlab_root_user",
-    "username": "root",
-    "password": "",
-    "privateKeySource": {
-      "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource",
-      "privateKey": "'$SSHKEY_PRIVATE_KEY'",
-    },
-    "description": "",
-    "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
-  }
-}'
+curl -X POST -u "$ACCOUNT" -H "$CRUMB" $HOST/credentials/store/system/domain/_/createCredentials \
+  --data-urlencode 'json={
+    "": "0",
+    "credentials": {
+      "scope": "GLOBAL",
+      "id": "gitlab_root_user",
+      "username": "root",
+      "password": "",
+      "privateKeySource": {
+        "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource",
+        "privateKey": "'$SSHKEY_PRIVATE_KEY'",
+      },
+      "description": "",
+      "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
+    }
+  }'
