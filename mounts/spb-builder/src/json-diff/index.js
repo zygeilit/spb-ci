@@ -1,7 +1,7 @@
 require('colors')
 var jsdiff = require('diff')
-var oriAst = require('./ori-ast.js')
-var newAst = require('./new-ast.js')
+var oriAst = require('./demo-ori-ast.js')
+var newAst = require('./demo-new-ast.js')
 
 var diff = jsdiff.diffJson(oriAst, newAst)
 
