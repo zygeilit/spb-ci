@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^5.3.0",
+    "acorn-es7-plugin": "^1.1.7",
+    "acorn-jsx": "^4.1.1",
     "colors": "^1.1.2",
     "diff": "^3.4.0"
   }
