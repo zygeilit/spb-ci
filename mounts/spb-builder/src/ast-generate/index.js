@@ -10,9 +10,18 @@ var jsDomeFileContent = fs.readFileSync(`${__dirname}/demo-react-cmp.js`, { enco
 var ast = acorn.parse(jsDomeFileContent, {
   'sourceType': 'module', // 支持import/export
   'locations': true, // 是否携带行号，列好
-  'plugins': { jsx: true }
+  'plugins': { jsx: true },
+  'onComment': function (block, text, start, end, pos, pos1) {
+  	console.log('------------start----------------')
+  	console.log(block)
+  	console.log(text.trim())
+  	console.log(start)
+  	console.log(end)
+  	console.log(pos)
+  	console.log(pos1)
+  	console.log('-------------end------------')
+  }
 })
 
 fs.writeFile(`${__dirname}/ast-demo-react-cmp.json`, JSON.stringify(ast, null, 2))
-
-console.log('ast json generated')
+console.log('Ast-Json Generated')
