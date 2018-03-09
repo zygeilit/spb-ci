@@ -6,7 +6,9 @@
 /services/mongodb/conf/*
 /services/webhooks/conf/*
 
+
 /node_modules
 /mounts/doc-web-server/node_modules
 /mounts/spb-builder/node_modules
 /mounts/spb-builder/src/ast-generate/ast-demo-react-cmp.js
+/mounts/shared-cmps-site/node_modules

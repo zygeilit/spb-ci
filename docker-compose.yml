@@ -121,3 +121,14 @@ services:
       - external_common_mounts_path=$external_common_mounts_path
     stdin_open: true
     tty: true
+
+  shared-cmps-site:
+    build:
+      context: ./services/shared-cmps-site
+    container_name: shared-cmps-site
+    ports:
+      - "$shared_cmps_site_port:3000"
+    volumes:
+      - ./mounts:$external_common_mounts_path
+    stdin_open: true
+    tty: true

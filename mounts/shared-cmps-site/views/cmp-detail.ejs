@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>React - Bootstrap theme</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/scss/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme.min.css" />
+
+  <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+  <!-- javascript -->
+  <script src="/javascripts/theme.min.js"></script>
+
+
+  <script type="text/javascript" src="/javascripts/ace-json-editor/ace.js"></script>
+  <script type="text/javascript" src="/javascripts/ace-json-editor/mode-json.js"></script>
+  <script type="text/javascript" src="/javascripts/ace-json-editor/worker-json.js"></script>
+
+  <script src="/javascripts/init-leancloud.js"></script>
+  <script type="text/javascript" src="/javascripts/release-cmp.js"></script>
+
+</head>
+<body class="blog-cols-page">
+  
+  <div class="navbar navbar-dark navbar-expand-lg" role="banner">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-light.png" class="mr-2 img-fluid" />
+        共享组件
+      </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/" class="nav-link"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-cols-header">
+    <div class="container">
+      </p>
+    </div>
+  </div>
+
+  <div class="blog-cols-wrapper">
+    <div class="container" id="cmp-list-container">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">名称</label>
+          <input type="text" class="form-control" id="cmp-name" aria-describedby="emailHelp" placeholder="name">
+          <small id="emailHelp" class="form-text text-muted">组件的中文名称，用于显示</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">编码</label>
+          <input type="text" class="form-control" id="cmp-code" aria-describedby="emailHelp" placeholder="code">
+          <small id="emailHelp" class="form-text text-muted">组件的唯一编码，不可重复</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1">类型</label>
+          <select class="form-control" id="cmp-type">
+            <option value="pageComponent">页面组件</option>
+            <option value="pageTemplate">页面</option>
+            <option value="layout">布局</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea">描述</label>
+          <textarea class="form-control" id="cmp-description" rows="3" placeholder="description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">元数据</label>
+          <pre type="description" id="cmp-metadata" class="form-control" placeholder="组件元数据" required style="height: 800px">{}</pre>
+        </div>
+        <div style="overflow: hidden;">
+          <input type="button" id="release-cmp" style="float: right;" class="btn btn-primary btn-sm" value="保存"></input>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+  </div>
+
+  <script>
+    $(function () {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      })
+    })
+
+    window.aceEditor = ace.edit('cmp-metadata')
+    window.aceEditor.session.setMode("ace/mode/json")
+
+    if (window.location.search) {
+      let objectIdKey = window.location.search.replace(/[\?]/, '')
+      let objectId = objectIdKey.split('=')[1]
+
+      var query = new AV.Query('Components')
+
+      query.get(objectId, {
+        success: function(obj) {
+          $('#cmp-name').val(obj.get('name'))
+          $('#cmp-code').val(obj.get('code'))
+          $('#cmp-description').val(obj.get('description'))
+          $('#cmp-type').val(obj.get('type'))
+          window.aceEditor.setValue(JSON.stringify(obj.get('metadata'), null, 4), 1)
+        },
+        error: function(obj, err) {
+          console.log(err.message)
+        }
+      })
+    } else {
+      // 新建态不做任何操作
+    }
+    
+    $("#release-cmp").bind('click', function () {
+      releaseCmp()
+    })
+  </script>
+</body>
+</html>
