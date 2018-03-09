@@ -10,7 +10,7 @@ RUN yum install -y wget && \
 RUN yum install -y git && \
 	git --version
 
-RUN cd $external_common_mounts_path/doc-web-server && \
+RUN cd $external_common_mounts_path/shared-cmps-site && \
     npm install
 
 CMD node $external_common_mounts_path/shared-cmps-site/bin/www && \
