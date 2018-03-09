@@ -10,5 +10,8 @@ RUN yum install -y wget && \
 RUN yum install -y git && \
 	git --version
 
+RUN cd $external_common_mounts_path/doc-web-server && \
+    npm install
+
 CMD node $external_common_mounts_path/doc-web-server/bin/www && \
 	tail -F $external_common_mounts_path/doc-web-server/error.log
