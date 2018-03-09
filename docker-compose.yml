@@ -130,5 +130,7 @@ services:
       - "$shared_cmps_site_port:3000"
     volumes:
       - ./mounts:$external_common_mounts_path
+    environment:
+      - external_common_mounts_path=$external_common_mounts_path
     stdin_open: true
     tty: true
