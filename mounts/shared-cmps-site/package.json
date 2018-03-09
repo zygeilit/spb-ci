@@ -13,6 +13,9 @@
     "express": "~4.15.5",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "express": "4.12.3",
+    "leanengine": "^3.0.2",
+    "leancloud-storage": "^3.3.1"
   }
 }
